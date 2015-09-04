@@ -1,14 +1,14 @@
 # SeniorProject
-Members
-Bryan Guerre; Ben Carr; Willburn 
+Members:
+Bryan Guerre; Ben Carr; Wilburn Hou 
 
-Project Idea
+Project Idea:
 Apartment / Roommate / Household manager system.
 
 Project Name:
 In Progress...
 
-Description
+Description:
 An Android App that helps roommates, housemates live together by giving them atl to balance all the random complications / complexities of living together. Helping them handle bills, chores, notifications, etc.
 
 Goals
@@ -29,12 +29,12 @@ Stretch Features / Goals
 3. authentication / security
 
 Tasks
-1. Set up a database (SQL) - Willburn
+1. Set up a database (SQL) - Wilburn
 2. Design Android Interface - Bryan
-3. Code app-to-db connection / communication - Willburn
+3. Code app-to-db connection / communication - Wilburn
 4. Math / Finance balancing and code + algorithms - Ben
 5. Notification System - ???
-6. Code Optimization / Clean up - Ben, Bryan, Willburn
+6. Code Optimization / Clean up - Ben, Bryan, Wilburn
 7. Android event handling / interface - Bryan
 8. more if needed...
 
@@ -42,7 +42,7 @@ Timeline / Milestones
 Sprint #1: Database functional / organized / designed; Basic UI (alpha); App to DB code working
 Sprint #2; Cost / $ balancing; UI Improvement (beta); chore distribution; Bulletin Board
 Sprint #3: Car sharing; UI improvements / Finalization; Text message / app-to-app communication / notification system
-Final Sprint#4: Paypal / Payment integration; Facebook integration; Authentication / Security
+Final Sprint#4: Paypal / Payment integration; Facebook/Google+ integration; Authentication / Security
 
 
 
