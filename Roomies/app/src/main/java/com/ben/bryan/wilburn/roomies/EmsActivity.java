@@ -1,27 +1,30 @@
 package com.ben.bryan.wilburn.roomies;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.content.Intent;
-import android.view.View;
+import android.widget.TextView;
 
-public class MyActivity extends Activity {
-
-    public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
+public class EmsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_my, menu);
-        return true;
+        //get the message from intent
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
+
+        // Create the text view
+        TextView textView = new TextView(this);
+        textView.setTextSize(40);
+        textView.setText(message);
+
+        // Set the text view as the activity layout
+        setContentView(textView);
     }
 
     @Override
@@ -37,12 +40,5 @@ public class MyActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void EmsButtonClick(View view) {
-        Intent intent = new Intent(this, EmsActivity.class);
-        String message = "Hello 2nd activity!";
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
     }
 }
