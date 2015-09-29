@@ -96,10 +96,10 @@ public class EmsActivity extends Activity {
         button1.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
-        button1.setPadding(16,16,16,0);
+        button1.setPadding(16, 16, 16, 0);
 
 
-        Toast.makeText(this,m_Text, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, m_Text, Toast.LENGTH_SHORT).show();
 
         linearLayout.addView(button1);
     }
