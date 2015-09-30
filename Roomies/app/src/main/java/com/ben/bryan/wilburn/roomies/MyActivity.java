@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.view.View;
 import android.app.IntentService;
 
-public class MyActivity extends Activity {
+public class MyActivity extends Activity, IntentService {
 
     public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
 
@@ -16,7 +16,10 @@ public class MyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+
        // RegistrationIntentService test = new RegistrationIntentService();
+        RegistrationIntentService test = new RegistrationIntentService();
+        test
     }
 
     @Override
