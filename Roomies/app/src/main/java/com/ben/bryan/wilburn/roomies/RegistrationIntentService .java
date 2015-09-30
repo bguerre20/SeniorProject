@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-package com.ben.bryan.wilburn.roomies;
 
 
 import android.app.IntentService;
@@ -85,7 +84,7 @@ public class RegistrationIntentService extends IntentService {
      * @param token The new token.
      */
     private void sendRegistrationToServer(String token) {
-        System.out.println(token);
+        // Add custom implementation, as needed.
     }
 
     /**

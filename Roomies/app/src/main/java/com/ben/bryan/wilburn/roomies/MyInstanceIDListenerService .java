@@ -1,4 +1,4 @@
-/**
+**
         *Copyright 2015Google Inc.All Rights Reserved.
         *
         *Licensed under the Apache License,Version2.0(the"License");
@@ -14,7 +14,6 @@
         *limitations under the License.
         */
 
-package com.ben.bryan.wilburn.roomies;
 
         import android.content.Intent;
         import android.content.SharedPreferences;
