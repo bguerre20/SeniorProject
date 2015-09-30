@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package gcm.play.android.samples.com.gcmquickstart;
+package com.ben.bryan.wilburn.roomies;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
