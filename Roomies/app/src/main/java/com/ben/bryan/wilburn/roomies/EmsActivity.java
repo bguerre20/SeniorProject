@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.text.InputType;
 import android.view.Gravity;
 import android.view.Menu;
@@ -24,6 +25,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
+
+
 
 public class EmsActivity extends Activity {
 
@@ -178,6 +181,21 @@ public class EmsActivity extends Activity {
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
         button1.setPadding(16, 16, 16, 0);
+
         linearLayout.addView(button1);
+    }
+
+    private View.OnClickListener getOnClickDoSomething(final Button b) {
+        return new View.OnClickListener() {
+            public void onClick(View v) {
+                sendMessage(b.getText().toString());
+            }
+        };
+    }
+
+    private void sendMessage(String message) {
+        SmsManager smsManager = SmsManager.getDefault();
+        smsManager.sendTextMessage("7609363116",null, message, null, null);
+        Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
     }
 }
