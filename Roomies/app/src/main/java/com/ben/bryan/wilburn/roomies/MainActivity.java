@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+/*
 package com.ben.bryan.wilburn.roomies;
 
 import android.content.BroadcastReceiver;
@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
      * it doesn't, display a dialog that allows users to download the APK from
      * the Google Play Store or enable it in the device's system settings.
      */
+/*
     private boolean checkPlayServices() {
         GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
         int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
@@ -105,4 +106,4 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-}
+}*/
