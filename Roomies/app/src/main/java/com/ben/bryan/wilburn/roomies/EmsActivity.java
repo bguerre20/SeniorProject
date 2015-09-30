@@ -2,6 +2,7 @@ package com.ben.bryan.wilburn.roomies;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +18,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
 
 public class EmsActivity extends Activity {
 
@@ -39,6 +46,8 @@ public class EmsActivity extends Activity {
         //setContentView(textView);
 
         setContentView(R.layout.activity_ems);
+
+        createButtons(readLocal());
     }
 
     @Override
@@ -71,7 +80,8 @@ public class EmsActivity extends Activity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 m_Text = input.getText().toString();
-                AddTextView();
+                AddButton();
+                writeLocal(m_Text + ",");
             }
         });
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -85,14 +95,13 @@ public class EmsActivity extends Activity {
         builder.show();
     }
 
-    private void AddTextView() {
+    private void AddButton() {
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.EmsLinearLayout);
 
         Button button1 = new Button(this);
 
         button1.setText(m_Text);
         button1.setId(R.id.EmsLinearLayout);
-        //button1.setGravity(Gravity.LEFT);
         button1.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
@@ -101,6 +110,74 @@ public class EmsActivity extends Activity {
 
         Toast.makeText(this, m_Text, Toast.LENGTH_SHORT).show();
 
+        linearLayout.addView(button1);
+    }
+
+    private void writeLocal(String messageToSave) {
+        File f = new File("EmsMessages");
+        if (f.exists()) {
+            try {
+                FileOutputStream outputStream = openFileOutput("EmsMessages", Context.MODE_APPEND);
+                outputStream.write(messageToSave.getBytes());
+                outputStream.close();
+            }
+            catch(Exception E) {
+                Toast.makeText(this, "Error writing to file", Toast.LENGTH_SHORT);
+            }
+        }
+        else {
+            try {
+                FileOutputStream outputStream = openFileOutput("EmsMessages", Context.MODE_APPEND);
+                outputStream.write(messageToSave.getBytes());
+                outputStream.close();
+            }
+            catch(Exception E) {
+                Toast.makeText(this, "Error writing to file", Toast.LENGTH_SHORT);
+            }
+        }
+    }
+
+    private String[] readLocal() {
+        String[] messages = null;
+        try {
+            FileInputStream inputStream = openFileInput("EmsMessages");
+            InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            StringBuilder sb = new StringBuilder();
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                sb.append(line);
+            }
+
+            messages = (sb.toString()).split(",");
+        }
+        catch(Exception e) {
+            Toast.makeText(this, "error in read local", Toast.LENGTH_SHORT);
+        }
+        return messages;
+    }
+
+    private void createButtons(String[] buttonMessages) {
+        if (buttonMessages == null) {
+            //do nothing
+        }
+        else {
+            for (int i = 0; i < buttonMessages.length; i++) {
+                addSingleButton(buttonMessages[i]);
+            }
+        }
+    }
+
+    private void addSingleButton(String message) {
+        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.EmsLinearLayout);
+        Button button1 = new Button(this);
+
+        button1.setText(message);
+        button1.setId(R.id.EmsLinearLayout);
+        button1.setLayoutParams(new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT));
+        button1.setPadding(16, 16, 16, 0);
         linearLayout.addView(button1);
     }
 }
