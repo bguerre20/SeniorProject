@@ -1,4 +1,4 @@
-**
+package com.ben.bryan.wilburn.roomies;/*
         *Copyright 2015Google Inc.All Rights Reserved.
         *
         *Licensed under the Apache License,Version2.0(the"License");
