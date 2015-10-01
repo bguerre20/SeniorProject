@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -20,12 +21,22 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+import com.parse.ParseObject;
+import com.parse.ParsePush;
+import com.parse.ParseQuery;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
-
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
 
 
 public class EmsActivity extends Activity {
@@ -39,7 +50,7 @@ public class EmsActivity extends Activity {
         //get the message from intent
         Intent intent = getIntent();
         String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
-
+        Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
         setContentView(R.layout.activity_ems);
 
         createButtons(readLocal());
@@ -168,9 +179,29 @@ public class EmsActivity extends Activity {
     }
 
     private void sendMessage(String message) {
+        ParseQuery<ParseInstallation> query = ParseInstallation.getQuery();
+        try {
+            List<ParseInstallation> installList = query.find();
+            String[] diviceTokenList =  new String[installList.size()];
+            for (int i = 0;i < installList.size();i++) {
+                diviceTokenList[i] = installList.get(i).getString("objectId");
+            }
+            String choice = chooseDeviceToken(diviceTokenList);
+            ParseQuery pushQuery = ParseInstallation.getQuery();
+            pushQuery.whereEqualTo("objectId", choice);
+            ParsePush push = new ParsePush();
+            push.setQuery(pushQuery);
+            push.setMessage(message);
+            push.sendInBackground();
+        } catch (com.parse.ParseException e) {}
+
+
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage("7609363116",null, message, null, null);
         Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
+    }
+    public String chooseDeviceToken(String[] diviceTokenList) {
+        return "";
     }
 
     public void ClearMessages(View view) {
