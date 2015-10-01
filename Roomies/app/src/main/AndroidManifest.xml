@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ben.bryan.wilburn.roomies" >
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
-    <permission android:name="com.ben.bryan.wilburn.roomies.permission.C2D_MESSAGE"
+    <permission
+        android:name="com.ben.bryan.wilburn.roomies.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
+
     <uses-permission android:name="com.ben.bryan.wilburn.roomies.permission.C2D_MESSAGE" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,23 +32,26 @@
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
                 <category android:name="com.ben.bryan.wilburn.roomies" />
             </intent-filter>
         </receiver>
+
         <service
-            android:name="com.ben.bryan.wilburn.roomies.MyGcmListenerService"
+            android:name=".MyGcmListenerService"
             android:exported="false" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
             </intent-filter>
         </service>
         <service
-            android:name="com.ben.bryan.wilburn.roomies.MyInstanceIDListenerService"
-            android:exported="false">
+            android:name=".MyInstanceIDListenerService1"
+            android:exported="false" >
             <intent-filter>
-                <action android:name="com.google.android.gms.iid.InstanceID"/>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
             </intent-filter>
         </service>
+
         <activity
             android:name=".MyActivity"
             android:label="@string/app_name" >

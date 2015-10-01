@@ -48,4 +48,5 @@ public class MyActivity extends Activity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+
 }

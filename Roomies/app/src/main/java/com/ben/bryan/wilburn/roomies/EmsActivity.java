@@ -40,14 +40,6 @@ public class EmsActivity extends Activity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
 
-        // Create the text view
-        //TextView textView = new TextView(this);
-        //textView.setTextSize(40);
-        //textView.setText(message);
-
-        // Set the text view as the activity layout
-        //setContentView(textView);
-
         setContentView(R.layout.activity_ems);
 
         createButtons(readLocal());
@@ -83,7 +75,7 @@ public class EmsActivity extends Activity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 m_Text = input.getText().toString();
-                AddButton();
+                addSingleButton(m_Text);
                 writeLocal(m_Text + ",");
             }
         });
@@ -97,25 +89,7 @@ public class EmsActivity extends Activity {
         //show the button
         builder.show();
     }
-
-    private void AddButton() {
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.EmsLinearLayout);
-
-        Button button1 = new Button(this);
-
-        button1.setText(m_Text);
-        button1.setId(R.id.EmsLinearLayout);
-        button1.setLayoutParams(new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT));
-        button1.setPadding(16, 16, 16, 0);
-
-
-        Toast.makeText(this, m_Text, Toast.LENGTH_SHORT).show();
-
-        linearLayout.addView(button1);
-    }
-
+    
     private void writeLocal(String messageToSave) {
         File f = new File("EmsMessages");
         if (f.exists()) {
@@ -161,7 +135,7 @@ public class EmsActivity extends Activity {
     }
 
     private void createButtons(String[] buttonMessages) {
-        if (buttonMessages == null) {
+        if (buttonMessages == null || buttonMessages[0] == "") {
             //do nothing
         }
         else {
@@ -181,11 +155,11 @@ public class EmsActivity extends Activity {
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
         button1.setPadding(16, 16, 16, 0);
-
+        button1.setOnClickListener(getOnClickDoSomething(button1));
         linearLayout.addView(button1);
     }
 
-    private View.OnClickListener getOnClickDoSomething(final Button b) {
+    View.OnClickListener getOnClickDoSomething(final Button b) {
         return new View.OnClickListener() {
             public void onClick(View v) {
                 sendMessage(b.getText().toString());
@@ -197,5 +171,19 @@ public class EmsActivity extends Activity {
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage("7609363116",null, message, null, null);
         Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
+    }
+
+    public void ClearMessages(View view) {
+        try {
+            String blank = "";
+            FileOutputStream outputStream = openFileOutput("EmsMessages", Context.MODE_PRIVATE);
+            outputStream.write(blank.getBytes());
+            outputStream.close();
+        }
+        catch(Exception E) {
+            Toast.makeText(this, "Error writing to file", Toast.LENGTH_SHORT);
+        }
+        finish();
+        startActivity(getIntent());
     }
 }
