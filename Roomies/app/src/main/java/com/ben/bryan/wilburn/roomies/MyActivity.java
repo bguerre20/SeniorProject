@@ -11,6 +11,10 @@ import android.app.IntentService;
 import com.parse.Parse;
 import com.parse.ParseInstallation;
 import com.parse.ParseObject;
+import com.parse.ParseUser;
+import com.parse.SignUpCallback;
+
+import java.text.ParseException;
 
 
 public class MyActivity extends Activity {
@@ -28,6 +32,30 @@ public class MyActivity extends Activity {
         //background listener for notifications
         Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
         ParseInstallation.getCurrentInstallation().saveInBackground();
+
+        ParseUser user = new ParseUser();
+        user.setUsername("Bryan");
+        user.setPassword("Guerre");
+        user.setEmail("bguerre12@gmail.com");
+        // other fields can be set just like with ParseObject
+        user.put("phone", "951-795-9262");
+        String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
+        user.put("phoneID", ID);
+        user.signUpInBackground(new SignUpCallback() {
+            @Override
+            public void done(com.parse.ParseException e) {
+                if (e == null) {
+                    // / Hooray! Let them use the app now.
+                    int a = 5;
+                }
+                else {
+                    // Sign up didn't succeed.
+                    // Look at the ParseException
+                    // to figure out what went wrong
+                    int b = 2;
+                }
+            }
+        });
     }
 
     @Override

@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,11 +22,14 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.parse.FindCallback;
 import com.parse.Parse;
+import com.parse.ParseException;
 import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 import com.parse.ParsePush;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -42,6 +46,7 @@ import java.util.ListIterator;
 public class EmsActivity extends Activity {
 
     private String m_Text = "";
+    private int index = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +55,7 @@ public class EmsActivity extends Activity {
         //get the message from intent
         Intent intent = getIntent();
         String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
-        Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
+        //Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
         setContentView(R.layout.activity_ems);
 
         createButtons(readLocal());
@@ -100,7 +105,7 @@ public class EmsActivity extends Activity {
         //show the button
         builder.show();
     }
-    
+
     private void writeLocal(String messageToSave) {
         File f = new File("EmsMessages");
         if (f.exists()) {
@@ -108,18 +113,15 @@ public class EmsActivity extends Activity {
                 FileOutputStream outputStream = openFileOutput("EmsMessages", Context.MODE_APPEND);
                 outputStream.write(messageToSave.getBytes());
                 outputStream.close();
-            }
-            catch(Exception E) {
+            } catch (Exception E) {
                 Toast.makeText(this, "Error writing to file", Toast.LENGTH_SHORT);
             }
-        }
-        else {
+        } else {
             try {
                 FileOutputStream outputStream = openFileOutput("EmsMessages", Context.MODE_APPEND);
                 outputStream.write(messageToSave.getBytes());
                 outputStream.close();
-            }
-            catch(Exception E) {
+            } catch (Exception E) {
                 Toast.makeText(this, "Error writing to file", Toast.LENGTH_SHORT);
             }
         }
@@ -138,8 +140,7 @@ public class EmsActivity extends Activity {
             }
 
             messages = (sb.toString()).split(",");
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             Toast.makeText(this, "error in read local", Toast.LENGTH_SHORT);
         }
         return messages;
@@ -148,8 +149,7 @@ public class EmsActivity extends Activity {
     private void createButtons(String[] buttonMessages) {
         if (buttonMessages == null || buttonMessages[0] == "") {
             //do nothing
-        }
-        else {
+        } else {
             for (int i = 0; i < buttonMessages.length; i++) {
                 addSingleButton(buttonMessages[i]);
             }
@@ -178,30 +178,59 @@ public class EmsActivity extends Activity {
         };
     }
 
-    private void sendMessage(String message) {
-        ParseQuery<ParseInstallation> query = ParseInstallation.getQuery();
-        try {
-            List<ParseInstallation> installList = query.find();
-            String[] diviceTokenList =  new String[installList.size()];
-            for (int i = 0;i < installList.size();i++) {
-                diviceTokenList[i] = installList.get(i).getString("objectId");
+    private void sendMessage(final String message) {
+
+        ParseQuery<ParseUser> query = ParseUser.getQuery();
+        //query.whereEqualTo("foo", "bar");
+
+        query.findInBackground(new FindCallback<ParseUser>() {
+            public void done(List<ParseUser> list, ParseException e) {
+                if (e == null) {
+                    Log.d("id", "Retrieved " + list.size() + " scores");
+                    String[] user = new String[list.size()];
+                    String testWho = list.get(0).getString("phoneID");
+                    ParseUser user1 = list.get(0);
+                    String test = user1.getString("phoneID");
+
+                    for (int i = 0; i < list.size(); i++) {
+                        user[i] = list.get(i).getString("phoneID");
+                        int a = 5;
+                    }
+
+                    String whoToSendTo = chooseDeviceToken(user);
+
+                    ParseQuery pushQuery = ParseInstallation.getQuery();
+                    //pushQuery.whereEqualTo("installationId", whoToSendTo);
+                    ParsePush push = new ParsePush();
+                    push.setQuery(pushQuery); // Set our Installation query
+                    push.setMessage(message);
+                    push.sendInBackground();
+
+
+                } else {
+                    Log.d("id", "Error: " + e.getMessage());
+                }
             }
-            String choice = chooseDeviceToken(diviceTokenList);
-            ParseQuery pushQuery = ParseInstallation.getQuery();
-            pushQuery.whereEqualTo("objectId", choice);
-            ParsePush push = new ParsePush();
-            push.setQuery(pushQuery);
-            push.setMessage(message);
-            push.sendInBackground();
-        } catch (com.parse.ParseException e) {}
+        });
 
 
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage("7609363116",null, message, null, null);
         Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
     }
-    public String chooseDeviceToken(String[] diviceTokenList) {
-        return "";
+    public String chooseDeviceToken(String[] deviceTokenList) {
+        index = 0;
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Choose Recipient")
+           .setItems(deviceTokenList, new DialogInterface.OnClickListener() {
+               public void onClick(DialogInterface dialog, int which) {
+               // The 'which' argument contains the index position
+               // of the selected item
+                   index = which;
+           }
+    });
+        builder.show();
+        return deviceTokenList[index];
     }
 
     public void ClearMessages(View view) {
