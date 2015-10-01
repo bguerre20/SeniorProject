@@ -28,11 +28,6 @@ public class MyActivity extends Activity {
         //background listener for notifications
         Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
         ParseInstallation.getCurrentInstallation().saveInBackground();
-
-        //send test object
-        ParseObject testObject = new ParseObject("TestObject");
-        testObject.put("foo", "bar");
-        testObject.saveInBackground();
     }
 
     @Override
