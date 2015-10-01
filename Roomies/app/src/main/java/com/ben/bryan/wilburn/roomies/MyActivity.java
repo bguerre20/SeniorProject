@@ -8,6 +8,10 @@ import android.content.Intent;
 import android.view.View;
 import android.app.IntentService;
 
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+
+
 public class MyActivity extends Activity {
 
     public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
