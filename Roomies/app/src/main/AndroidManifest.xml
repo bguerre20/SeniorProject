@@ -11,6 +11,7 @@
 	<uses-permission android:name="android.permission.VIBRATE" />
 	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
 	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
  
 <!--
   IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
@@ -20,9 +21,6 @@
 		android:name="com.parse.starter.permission.C2D_MESSAGE" />
 	<uses-permission android:name="com.ben.bryan.wilburn.roomies.permission.C2D_MESSAGE" />
 
-    <permission android:name="com.ben.bryan.wilburn.roomies.permission.C2D_MESSAGE"
-        android:protectionLevel="signature" />
-    <uses-permission android:name="com.ben.bryan.wilburn.roomies.permission.C2D_MESSAGE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -49,29 +47,8 @@
 			<category android:name="com.ben.bryan.wilburn.roomies" />
 		</intent-filter>
 	</receiver>
-        <receiver
-            android:name="com.google.android.gms.gcm.GcmReceiver"
-            android:exported="true"
-            android:permission="com.google.android.c2dm.permission.SEND" >
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <category android:name="com.ben.bryan.wilburn.roomies" />
-            </intent-filter>
-        </receiver>
-        <service
-            android:name="com.ben.bryan.wilburn.roomies.MyGcmListenerService"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-            </intent-filter>
-        </service>
-        <service
-            android:name="com.ben.bryan.wilburn.roomies.MyInstanceIDListenerService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.google.android.gms.iid.InstanceID"/>
-            </intent-filter>
-        </service>
+
+
         <activity
             android:name=".MyActivity"
             android:label="@string/app_name" >

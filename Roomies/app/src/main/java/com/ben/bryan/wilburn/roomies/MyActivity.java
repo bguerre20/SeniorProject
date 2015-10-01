@@ -10,6 +10,7 @@ import android.app.IntentService;
 
 import com.parse.Parse;
 import com.parse.ParseInstallation;
+import com.parse.ParseObject;
 
 
 public class MyActivity extends Activity {
@@ -20,9 +21,18 @@ public class MyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-		Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
+
+        // Enable Local Datastore.
+        Parse.enableLocalDatastore(this);
+
+        //background listener for notifications
+        Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
         ParseInstallation.getCurrentInstallation().saveInBackground();
-       // RegistrationIntentService test = new RegistrationIntentService();
+
+        //send test object
+        ParseObject testObject = new ParseObject("TestObject");
+        testObject.put("foo", "bar");
+        testObject.saveInBackground();
     }
 
     @Override
