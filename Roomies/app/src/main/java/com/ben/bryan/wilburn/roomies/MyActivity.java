@@ -34,11 +34,11 @@ public class MyActivity extends Activity {
         ParseInstallation.getCurrentInstallation().saveInBackground();
 
         ParseUser user = new ParseUser();
-        user.setUsername("Bryan");
-        user.setPassword("Guerre");
-        user.setEmail("bguerre12@gmail.com");
+        user.setUsername("Benjamin");
+        user.setPassword("Carr");
+        user.setEmail("ben_carr_white@hotmail.com");
         // other fields can be set just like with ParseObject
-        user.put("phone", "951-795-9262");
+        user.put("phone", "760-936-3116");
         String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
         user.put("phoneID", ID);
         user.signUpInBackground(new SignUpCallback() {
