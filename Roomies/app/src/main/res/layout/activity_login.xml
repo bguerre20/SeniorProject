@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:id="@+id/LoginLinearLayout">
+    tools:context="com.ben.bryan.wilburn.roomies.LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:src="@drawable/roommies_logo" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="LoginClick"/>
+        android:id="@+id/button" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:onClick="RegisterClick"/>
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ExitClick"/>
+        android:layout_weight="1" />
+</LinearLayout>
