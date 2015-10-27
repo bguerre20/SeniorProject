@@ -34,11 +34,11 @@ public class MyActivity extends Activity {
         ParseInstallation.getCurrentInstallation().saveInBackground();
 
         ParseUser user = new ParseUser();
-        user.setUsername("Benjamin");
-        user.setPassword("Carr");
-        user.setEmail("ben_carr_white@hotmail.com");
+        user.setUsername("Bryan");
+        user.setPassword("Guerre");
+        user.setEmail("bguerre12@gmail.com");
         // other fields can be set just like with ParseObject
-        user.put("phone", "760-936-3116");
+        user.put("phone", "951-795-9262");
         String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
         user.put("phoneID", ID);
         user.signUpInBackground(new SignUpCallback() {
@@ -87,4 +87,28 @@ public class MyActivity extends Activity {
         startActivity(intent);
     }
 
+    public void ChoreClick(View view) {
+        Intent intent = new Intent(this, ChoreActivity.class);
+        String message = "Hello 2nd activity!";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void BulletinBoardClick(View view) {
+        Intent intent = new Intent(this, BulletinBoardActivity.class);
+        String message = "Hello 2nd activity!";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void SettingsClick(View view) {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        String message = "Hello 2nd activity!";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void LogoutClick(View view) {
+        finish();
+    }
 }
