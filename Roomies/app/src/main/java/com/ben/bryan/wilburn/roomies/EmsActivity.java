@@ -54,7 +54,7 @@ public class EmsActivity extends Activity {
 
         //get the message from intent
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
+
         //Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
         setContentView(R.layout.activity_ems);
 

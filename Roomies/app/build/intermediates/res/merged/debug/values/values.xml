@@ -292,7 +292,9 @@
     <string name="test_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="test_interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
     <string name="title_activity_ems">EmsActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_manage_household">ManageHouseholdActivity</string>
+    <string name="title_activity_my">MyActivity</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
