@@ -27,13 +27,15 @@ public class MyActivity extends Activity {
         setContentView(R.layout.activity_my);
 
         // Enable Local Datastore.
-        Parse.enableLocalDatastore(this);
+        // Parse.enableLocalDatastore(this);
 
         //background listener for notifications
-        Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
-        ParseInstallation.getCurrentInstallation().saveInBackground();
+        // Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
+        // ParseInstallation.getCurrentInstallation().saveInBackground();
 
+        /*
         ParseUser user = new ParseUser();
+
         user.setUsername("Bryan");
         user.setPassword("Guerre");
         user.setEmail("bguerre12@gmail.com");
@@ -56,6 +58,7 @@ public class MyActivity extends Activity {
                 }
             }
         });
+        */
     }
 
     @Override
