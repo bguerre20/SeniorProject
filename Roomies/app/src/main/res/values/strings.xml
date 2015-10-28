@@ -3,11 +3,25 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_ems">EmsActivity</string>
     <string name="title_activity_my">MyActivity</string>
     <string name="title_activity_manage_household">ManageHouseholdActivity</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_ems">EmsActivity</string>
     <string name="title_activity_chore">ChoreActivity</string>
     <string name="title_activity_bulletin_board">BulletinBoardActivity</string>
     <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="username">Username (email)</string>
+    <string name="displayname">Display Name</string>
+    <string name="password">Password</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="gid">Group ID (optional)</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    <string name="back">Back</string>
+
+    <string name="logo">Logo</string>
 </resources>
