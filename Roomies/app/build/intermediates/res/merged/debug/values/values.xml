@@ -305,6 +305,7 @@
     <string name="title_activity_chore">ChoreActivity</string>
     <string name="title_activity_create_bulletin">CreateBulletinActivity</string>
     <string name="title_activity_ems">EmsActivity</string>
+    <string name="title_activity_house_hold">HouseHoldActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_manage_household">ManageHouseholdActivity</string>
     <string name="title_activity_my">MyActivity</string>
