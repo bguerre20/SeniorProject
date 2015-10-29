@@ -15,12 +15,13 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:src="@drawable/roommies_logo"
-        android:contentDescription="@string/logo"/>
+        android:contentDescription="@string/logo" />
 
     <TextView
         android:text="@string/username"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp" />
 
     <EditText
         android:layout_width="fill_parent"
