@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\values-en-rAU\\values-en-rAU.xml",
         "map": [
             {
@@ -595,6 +596,9 @@
     },
     {
         "outputFile": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\values-en-rAU\\values-en-rAU.xml",
+=======
+        "outputFile": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\values-en-rAU\\values-en-rAU.xml",
+>>>>>>> 62c342a4907dd4cf19e25f92d734945a505cbdf9
         "map": [
             {
                 "to": {
@@ -605,7 +609,7 @@
                     "endOffset": 287
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -624,7 +628,7 @@
                     "endOffset": 462
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -643,7 +647,7 @@
                     "endOffset": 573
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -662,7 +666,7 @@
                     "endOffset": 835
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -681,7 +685,7 @@
                     "endOffset": 963
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -700,7 +704,7 @@
                     "endOffset": 1147
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -719,7 +723,7 @@
                     "endOffset": 1273
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -738,7 +742,7 @@
                     "endOffset": 1442
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -757,7 +761,7 @@
                     "endOffset": 1568
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -776,7 +780,7 @@
                     "endOffset": 1783
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -795,7 +799,7 @@
                     "endOffset": 1999
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -814,7 +818,7 @@
                     "endOffset": 2122
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -833,7 +837,7 @@
                     "endOffset": 2317
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -852,7 +856,7 @@
                     "endOffset": 2441
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -871,7 +875,7 @@
                     "endOffset": 2608
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -890,7 +894,7 @@
                     "endOffset": 2779
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -909,7 +913,7 @@
                     "endOffset": 2899
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -928,7 +932,7 @@
                     "endOffset": 3077
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -947,7 +951,7 @@
                     "endOffset": 3210
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -966,7 +970,7 @@
                     "endOffset": 3391
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -985,7 +989,7 @@
                     "endOffset": 3513
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -1004,7 +1008,7 @@
                     "endOffset": 3654
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -1023,7 +1027,7 @@
                     "endOffset": 3903
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -1042,7 +1046,7 @@
                     "endOffset": 4028
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -1061,7 +1065,7 @@
                     "endOffset": 4135
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -1080,7 +1084,7 @@
                     "endOffset": 4318
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1099,7 +1103,7 @@
                     "endOffset": 4445
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1118,7 +1122,7 @@
                     "endOffset": 4650
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1137,7 +1141,7 @@
                     "endOffset": 4784
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -1156,7 +1160,7 @@
                     "endOffset": 4876
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-en-rAU\\common_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -1175,7 +1179,7 @@
                     "endOffset": 4981
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\8.1.0\\res\\values-en-rAU\\wallet_strings.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\8.1.0\\res\\values-en-rAU\\wallet_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,

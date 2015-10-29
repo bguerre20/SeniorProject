@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\values-xlarge-v4\\values-xlarge-v4.xml",
         "map": [
             {
@@ -139,6 +140,9 @@
     },
     {
         "outputFile": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\values-xlarge-v4\\values-xlarge-v4.xml",
+=======
+        "outputFile": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\values-xlarge-v4\\values-xlarge-v4.xml",
+>>>>>>> 62c342a4907dd4cf19e25f92d734945a505cbdf9
         "map": [
             {
                 "to": {
@@ -149,7 +153,7 @@
                     "endOffset": 127
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -168,7 +172,7 @@
                     "endOffset": 191
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -187,7 +191,7 @@
                     "endOffset": 258
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -206,7 +210,7 @@
                     "endOffset": 325
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -225,7 +229,7 @@
                     "endOffset": 391
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -244,7 +248,7 @@
                     "endOffset": 457
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -263,7 +267,7 @@
                     "endOffset": 512
                 },
                 "from": {
-                    "file": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
