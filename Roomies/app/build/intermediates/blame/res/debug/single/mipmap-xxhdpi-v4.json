@@ -1,15 +1,6 @@
 [
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-=======
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
->>>>>>> 62c342a4907dd4cf19e25f92d734945a505cbdf9
     }
 ]
