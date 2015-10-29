@@ -1,7 +1,24 @@
 [
     {
+<<<<<<< HEAD
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_medium_off_client.png"
+=======
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_tall_off_client.png"
+>>>>>>> 62c342a4907dd4cf19e25f92d734945a505cbdf9
     },
     {
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
@@ -16,7 +33,20 @@
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_small_off_client.png"
     },
     {
+<<<<<<< HEAD
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\setsu\\Documents\\GitHub\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\drawable-tvdpi\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\drawable-tvdpi\\common_full_open_on_phone.png"
+=======
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_full_open_on_phone.png",
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\drawable-tvdpi\\common_full_open_on_phone.png"
+>>>>>>> 62c342a4907dd4cf19e25f92d734945a505cbdf9
     }
 ]

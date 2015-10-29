@@ -7,56 +7,61 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:id="@+id/LoginLinearLayout">
-    tools:context="com.ben.bryan.wilburn.roomies.LoginActivity">
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:id="@+id/imageView"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center"
         android:layout_weight="1"
-        android:src="@drawable/roommies_logo" />
+        android:src="@drawable/roommies_logo"
+        android:contentDescription="@string/logo" />
+
+    <TextView
+        android:text="@string/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/edittxt_username"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1" />
+
+    <TextView
+        android:text="@string/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/edittxt_password"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:onClick="LoginClick"/>
-        android:id="@+id/button" />
+        android:text="@string/login"
+        android:id="@+id/button_login" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
-        android:id="@+id/button2"
-        android:layout_gravity="center_horizontal"
-        android:onClick="RegisterClick"/>
-        android:layout_weight="1" />
+        android:text="@string/register"
+        android:id="@+id/button_register" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Exit"
-        android:id="@+id/button3"
-        android:layout_gravity="center_horizontal"
-        android:onClick="ExitClick"/>
-        android:layout_weight="1" />
+        android:text="@string/exit"
+        android:id="@+id/button_exit" />
+
 </LinearLayout>

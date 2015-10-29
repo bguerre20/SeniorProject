@@ -11,51 +11,31 @@ import android.app.IntentService;
 import com.parse.Parse;
 import com.parse.ParseInstallation;
 import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
 import java.text.ParseException;
+import java.util.Arrays;
 
 
 public class MyActivity extends Activity {
 
     public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
+    // Variables
+    ParseUser user = ParseUser.getCurrentUser();
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
-        // Enable Local Datastore.
-        Parse.enableLocalDatastore(this);
+        /* Create new ParseObject Apartment
+        ParseObject apartment = new ParseObject("Apartment");
+        apartment.put("userId", user.getObjectId());
+        apartment.saveInBackground(); */
 
-        //background listener for notifications
-        Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
-        ParseInstallation.getCurrentInstallation().saveInBackground();
-
-        ParseUser user = new ParseUser();
-        user.setUsername("Bryan");
-        user.setPassword("Guerre");
-        user.setEmail("bguerre12@gmail.com");
-        // other fields can be set just like with ParseObject
-        user.put("phone", "951-795-9262");
-        String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
-        user.put("phoneID", ID);
-        user.signUpInBackground(new SignUpCallback() {
-            @Override
-            public void done(com.parse.ParseException e) {
-                if (e == null) {
-                    // / Hooray! Let them use the app now.
-                    int a = 5;
-                }
-                else {
-                    // Sign up didn't succeed.
-                    // Look at the ParseException
-                    // to figure out what went wrong
-                    int b = 2;
-                }
-            }
-        });
+        // background listener for notifications
+        // ParseInstallation.getCurrentInstallation().saveInBackground();
     }
 
     @Override
@@ -112,3 +92,29 @@ public class MyActivity extends Activity {
         finish();
     }
 }
+/*
+        ParseUser user = new ParseUser();
+
+        user.setUsername("Bryan");
+        user.setPassword("Guerre");
+        user.setEmail("bguerre12@gmail.com");
+        // other fields can be set just like with ParseObject
+        user.put("phone", "951-795-9262");
+        String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
+        user.put("phoneID", ID);
+        user.signUpInBackground(new SignUpCallback() {
+            @Override
+            public void done(com.parse.ParseException e) {
+                if (e == null) {
+                    // / Hooray! Let them use the app now.
+                    int a = 5;
+                }
+                else {
+                    // Sign up didn't succeed.
+                    // Look at the ParseException
+                    // to figure out what went wrong
+                    int b = 2;
+                }
+            }
+        });
+        */
