@@ -29,12 +29,12 @@ public class RegisterActivity extends Activity {
     String string_password;
     String string_username;
     String string_phonenumber;
-    String string_gid;
+    // String string_gid;
     EditText edittxt_displayname;
     EditText edittxt_password;
     EditText edittxt_username;
     EditText edittxt_phonenumber;
-    EditText edittxt_gid;
+    // EditText edittxt_gid;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +45,7 @@ public class RegisterActivity extends Activity {
         edittxt_password = (EditText) findViewById(R.id.edittxt_password);
         edittxt_username = (EditText) findViewById(R.id.edittxt_username);
         edittxt_phonenumber = (EditText) findViewById(R.id.edittxt_phonenumber);
-        edittxt_gid = (EditText) findViewById(R.id.edittxt_gid);
+            // edittxt_gid = (EditText) findViewById(R.id.edittxt_gid);
 
         // Locate Buttons in activity_register.xml
         button_register = (Button) findViewById(R.id.button_register);
@@ -60,7 +60,7 @@ public class RegisterActivity extends Activity {
                 string_username = edittxt_username.getText().toString();
                 string_phonenumber = edittxt_phonenumber.getText().toString();
                 string_displayname = edittxt_displayname.getText().toString();
-                string_gid = edittxt_gid.getText().toString();
+                    // string_gid = edittxt_gid.getText().toString();
 
                 // Force user to fill up the form
                 if (string_username.equals("") || string_password.equals("") ||
@@ -77,43 +77,37 @@ public class RegisterActivity extends Activity {
                     String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
                     user.put("phoneID", ID);
 
-                    if(string_gid.equals("")) {
-                        // Create new Apartment group
-                        ParseObject apartment = new ParseObject("Apartment");
-                        apartment.put("email", Arrays.asList(string_username));
-                        apartment.saveInBackground();
-                    } else {
-                        // Find and Add string_username to Apartment group
-                        ParseQuery<ParseObject> query = ParseQuery.getQuery("Apartment");
-                        query.getInBackground(string_gid, new GetCallback<ParseObject>() {
-                            @Override
-                            public void done(ParseObject apartment, ParseException e) {
-                                if (e == null) {
-                                    apartment.addUnique("email", Arrays.asList(string_username));
-                                } else {
-                                    Toast.makeText(getApplicationContext(),
-                                            "GroupID does not exist, creating new Group",
-                                            Toast.LENGTH_LONG).show();
-                                    apartment = new ParseObject("Apartment");
-                                    apartment.put("email", Arrays.asList(string_username));
-                                    apartment.saveInBackground();
-                                }
-                            }
-                        });
-                    }
+                    /* Create new ParseObject Apartment
+                    ParseObject apartment = new ParseObject("Apartment");
+                    apartment.addUnique("email", Arrays.asList(string_username));
+                    apartment.saveInBackground(); */
 
                     user.signUpInBackground(new SignUpCallback() {
                         @Override
                         public void done(ParseException e) {
                             if (e == null) {
-                                // Show a Toast message upon successful
-                                // registration and send back to LoginActivity.
-                                Toast.makeText(getApplicationContext(),
-                                        "Successfully Signed up, please log in.",
-                                        Toast.LENGTH_LONG).show();
-                                Intent intent = new Intent(RegisterActivity.this,
-                                        LoginActivity.class);
-                                startActivity(intent);
+                                // Log in the user
+                                ParseUser.logInInBackground(string_username, string_password,
+                                        new LogInCallback() {
+                                            @Override
+                                            public void done(ParseUser user, ParseException e) {
+                                                if (user != null) {
+                                                    // Send user to MyActivity.class
+                                                    Intent intent = new Intent(RegisterActivity.this,
+                                                            MyActivity.class);
+                                                    startActivity(intent);
+                                                    Toast.makeText(getApplicationContext(),
+                                                            "Successfully Signed up and logged in.",
+                                                            Toast.LENGTH_LONG).show();
+                                                    finish();
+                                                } else {
+                                                    Toast.makeText(getApplicationContext(),
+                                                            "Login Failed.",
+                                                            Toast.LENGTH_LONG).show();
+                                                }
+                                            }
+                                        });
+
                                 finish();
                             } else {
                                 Toast.makeText(getApplicationContext(),
@@ -135,6 +129,12 @@ public class RegisterActivity extends Activity {
                 finish();
             }
         });
+    }
+
+    private void createApartment() {
+        ParseObject apartment = new ParseObject("Apartment");
+        apartment.addUnique("email", Arrays.asList(string_username));
+        apartment.pinInBackground();
     }
 
     /* Registration method
