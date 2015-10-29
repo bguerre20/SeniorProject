@@ -97,6 +97,15 @@
             </intent-filter>
         </receiver>
 
+        <activity
+            android:name="com.ben.bryan.wilburn.roomies.CreateBulletinActivity"
+            android:label="@string/title_activity_create_bulletin"
+            android:parentActivityName="com.ben.bryan.wilburn.roomies.BulletinBoardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ben.bryan.wilburn.roomies.BulletinBoardActivity" />
+        </activity>
+
         <provider
             android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
             android:authorities="com.ben.bryan.wilburn.roomies.google_measurement_service"

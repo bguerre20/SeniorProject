@@ -4,15 +4,18 @@
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:orientation="vertical" >
+    android:paddingTop="25dp"
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <ImageView
-        android:layout_width="200dp"
+        android:layout_width="284dp"
         android:layout_height="200dp"
         android:id="@+id/imageView2"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/roommies_logo" />
+        android:src="@drawable/roommies_logo"
+        android:paddingBottom="25dp"
+        android:layout_weight="0.89" />
 
     <Button
         android:layout_height="wrap_content"

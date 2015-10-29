@@ -303,6 +303,7 @@
     <string name="test_interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
     <string name="title_activity_bulletin_board">BulletinBoardActivity</string>
     <string name="title_activity_chore">ChoreActivity</string>
+    <string name="title_activity_create_bulletin">CreateBulletinActivity</string>
     <string name="title_activity_ems">EmsActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_manage_household">ManageHouseholdActivity</string>
@@ -315,7 +316,7 @@
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <style name="AppTheme" parent="android:ThemeOverlay.Material.Dark">
         <!-- Customize your theme here. -->
     </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
