@@ -1,6 +1,9 @@
 -- Merging decision tree log ---
 manifest
 <<<<<<< HEAD
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:2:1-112:12
+=======
+<<<<<<< HEAD
 ADDED from C:\Users\Ben\Desktop\Final Project\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:2:1-96:12
 	package
 		ADDED from C:\Users\Ben\Desktop\Final Project\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:3:5-44
@@ -597,6 +600,7 @@ ADDED from [com.google.android.gms:play-services-wallet:8.1.0] C:\Users\Ben\Desk
 		ADDED from [com.google.android.gms:play-services-wallet:8.1.0] C:\Users\Ben\Desktop\Final Project\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.1.0\AndroidManifest.xml:22:22-71
 =======
 ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:2:1-115:12
+>>>>>>> c5e91bcf82ecc270f4fd2087ef9d812d8e7f7f62
 	package
 		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:3:5-44
 		INJECTED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml
@@ -855,7 +859,7 @@ ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:29:22-89
 application
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:31:5-113:19
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:31:5-110:19
 MERGED from [com.google.android.gms:play-services-measurement:8.1.0] C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\AndroidManifest.xml:26:5-46:19
 MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
@@ -985,117 +989,125 @@ MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Bryan\Documents\COD
 	android:name
 		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:32:9-28
 activity#com.ben.bryan.wilburn.roomies.MyActivity
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:40:9-44:20
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:37:9-41:20
 	android:label
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:42:13-54
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:39:13-54
 	android:parentActivityName
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:43:13-56
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:40:13-56
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:41:13-39
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:38:13-39
 activity#com.ben.bryan.wilburn.roomies.LoginActivity
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:46:9-54:20
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:42:9-50:20
 	android:label
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:48:13-57
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:44:13-57
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:47:13-42
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:43:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:49:13-53:29
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:45:13-49:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:50:17-69
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:46:17-69
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:50:25-66
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:46:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:52:17-77
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:52:27-74
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:48:27-74
 activity#com.ben.bryan.wilburn.roomies.RegisterActivity
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:56:9-59:20
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:51:9-54:20
 	android:label
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:58:13-60
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:53:13-60
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:57:13-45
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:52:13-45
 activity#com.ben.bryan.wilburn.roomies.EmsActivity
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:61:9-64:20
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:55:9-58:20
 	android:label
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:63:13-55
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:57:13-55
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:62:13-40
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:56:13-40
 activity#com.ben.bryan.wilburn.roomies.ChoreActivity
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:66:9-69:20
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:59:9-62:20
 	android:label
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:68:13-57
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:61:13-57
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:67:13-42
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:60:13-42
 activity#com.ben.bryan.wilburn.roomies.BulletinBoardActivity
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:71:9-74:20
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:63:9-66:20
 	android:label
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:73:13-66
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:65:13-66
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:72:13-50
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:64:13-50
 activity#com.ben.bryan.wilburn.roomies.SettingsActivity
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:76:9-79:20
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:67:9-70:20
 	android:label
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:78:13-60
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:69:13-60
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:77:13-45
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:68:13-45
 service#com.parse.PushService
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:83:9-57
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:72:9-57
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:83:18-54
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:72:18-54
 receiver#com.parse.ParsePushBroadcastReceiver
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:85:9-93:20
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:74:9-82:20
 	android:exported
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:87:13-37
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:76:13-37
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:86:13-64
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:75:13-64
 intent-filter#com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:88:13-92:29
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:77:13-81:29
 action#com.parse.push.intent.RECEIVE
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:89:17-72
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:78:17-72
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:89:25-69
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:78:25-69
 action#com.parse.push.intent.DELETE
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:90:17-71
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:79:17-71
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:90:25-68
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:79:25-68
 action#com.parse.push.intent.OPEN
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:91:17-69
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:80:17-69
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:91:25-66
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:80:25-66
 receiver#com.parse.GcmBroadcastReceiver
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:94:9-103:20
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:83:9-92:20
 	android:permission
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:96:13-73
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:85:13-73
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:95:13-58
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:84:13-58
 intent-filter#com.ben.bryan.wilburn.roomies+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:97:13-102:29
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:86:13-91:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:98:17-81
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:87:17-81
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:98:25-78
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:87:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:99:17-86
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:88:17-86
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:99:25-83
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:88:25-83
 category#com.ben.bryan.wilburn.roomies
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:101:17-74
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:90:17-74
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:101:27-71
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:90:27-71
 activity#com.ben.bryan.wilburn.roomies.CreateBulletinActivity
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:105:9-112:20
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:94:9-101:20
 	android:label
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:107:13-67
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:96:13-67
 	android:parentActivityName
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:108:13-64
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:97:13-64
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:106:13-51
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:95:13-51
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:109:13-111:87
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:98:13-100:87
 	android:value
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:111:17-84
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:100:17-84
 	android:name
-		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:110:17-63
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:99:17-63
+activity#com.ben.bryan.wilburn.roomies.HouseHoldActivity
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:102:9-109:20
+	android:label
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:104:13-62
+	android:parentActivityName
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:105:13-59
+	android:name
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:103:13-46
 provider#com.google.android.gms.measurement.AppMeasurementContentProvider
 ADDED from [com.google.android.gms:play-services-measurement:8.1.0] C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\AndroidManifest.xml:28:7-31:37
 MERGED from [com.google.android.gms:play-services-measurement:8.1.0] C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\AndroidManifest.xml:28:7-31:37
