@@ -63,7 +63,7 @@
         android:id="@+id/edittxt_phonenumber"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1" />
-
+<!-- NOT WORKING AS INTENDED
     <TextView
         android:text="@string/gid"
         android:layout_width="fill_parent"
@@ -77,7 +77,7 @@
         android:id="@+id/edittxt_gid"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1" />
-
+-->
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
