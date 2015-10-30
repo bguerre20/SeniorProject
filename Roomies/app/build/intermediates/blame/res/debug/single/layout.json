@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my.xml",
-        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\src\\main\\res\\layout\\activity_my.xml"
-    },
-    {
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my.xml",
+        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\src\\main\\res\\layout\\activity_my.xml"
     },
     {
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
@@ -148,12 +148,12 @@
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_house_hold.xml",
-        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\src\\main\\res\\layout\\activity_house_hold.xml"
-    },
-    {
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_house_hold.xml",
+        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\src\\main\\res\\layout\\activity_house_hold.xml"
     },
     {
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",

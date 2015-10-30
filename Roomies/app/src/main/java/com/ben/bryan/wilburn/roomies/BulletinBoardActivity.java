@@ -17,10 +17,10 @@ public class BulletinBoardActivity extends Activity {
     int clickCounter=0;
 
 
-    protected void onCreate(Bundle savedInstanceState, Bundle icicle) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        super.onCreate(icicle);
+        //super.onCreate(icicle);
         setContentView(R.layout.activity_bulletin_board);
         adapter=new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,
