@@ -105,6 +105,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ben.bryan.wilburn.roomies.BulletinBoardActivity" />
         </activity>
+        <activity
+            android:name="com.ben.bryan.wilburn.roomies.HouseHoldActivity"
+            android:label="@string/title_activity_house_hold"
+            android:parentActivityName="com.ben.bryan.wilburn.roomies.RegisterActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ben.bryan.wilburn.roomies.RegisterActivity" />
+        </activity>
 
         <provider
             android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"

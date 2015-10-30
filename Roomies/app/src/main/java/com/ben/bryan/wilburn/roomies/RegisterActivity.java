@@ -77,6 +77,10 @@ public class RegisterActivity extends Activity {
                     String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
                     user.put("phoneID", ID);
 
+
+
+
+
                     /* Create new ParseObject Apartment
                     ParseObject apartment = new ParseObject("Apartment");
                     apartment.addUnique("email", Arrays.asList(string_username));
@@ -86,6 +90,9 @@ public class RegisterActivity extends Activity {
                         @Override
                         public void done(ParseException e) {
                             if (e == null) {
+
+
+
                                 // Log in the user
                                 ParseUser.logInInBackground(string_username, string_password,
                                         new LogInCallback() {
@@ -99,6 +106,12 @@ public class RegisterActivity extends Activity {
                                                     Toast.makeText(getApplicationContext(),
                                                             "Successfully Signed up and logged in.",
                                                             Toast.LENGTH_LONG).show();
+
+                                                    Intent intent2 = new Intent(RegisterActivity.this, HouseHoldActivity.class);
+                                                    String message = "Hello 2nd activity!";
+                                                    intent2.putExtra("message", message);
+                                                    startActivity(intent2);
+
                                                     finish();
                                                 } else {
                                                     Toast.makeText(getApplicationContext(),
