@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.ArrayAdapter;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -22,15 +23,16 @@ public class ChoreActivity extends Activity {
     ArrayAdapter<String> adapter;
     int clickCounter=0;
 
+
     private String name;
     private String description;
     private String date;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chore);
         getActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         ParseUser user = ParseUser.getCurrentUser();
         final ParseQuery<ParseObject> boardQuery = ParseQuery.getQuery("Chore");
@@ -45,6 +47,7 @@ public class ChoreActivity extends Activity {
                 } else {
                     // Something went wrong.
                 }
+
 
                 String[] strArray = new String[listItems.size()];
                 for (int i = 0; i < listItems.size(); i++) {

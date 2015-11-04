@@ -12,6 +12,7 @@ public class CreateBulletinActivity extends Activity {
     private String name;
     private String description;
     private String date;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,10 @@ public class CreateBulletinActivity extends Activity {
 
     }
     public void CreateClick (View view) throws ParseException {
+        String name;
+        String description;
+        String date;
+
 
         EditText viewText = (EditText) findViewById(R.id.editText);
         name = viewText.getText().toString();
@@ -39,6 +44,15 @@ public class CreateBulletinActivity extends Activity {
 
         bulletin.saveInBackground();
         finish();
+        viewText = (EditText) findViewById(R.id.calendarView);
+        date = viewText.getText().toString();
+
+
+        bulletin.put("DeleteDate", date);
+        bulletin.put("Notification", description);
+        bulletin.put("Name", name);
+        bulletin.put("Apartment", user.get("Apartment"));
+        bulletin.saveInBackground();
     }
 
     public void CancelClick (View view) throws ParseException {
