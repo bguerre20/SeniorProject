@@ -9,6 +9,9 @@ import com.parse.*;
 
 public class CreateBulletinActivity extends Activity {
 
+    private String name;
+    private String description;
+    private String date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +32,22 @@ public class CreateBulletinActivity extends Activity {
         viewText = (EditText) findViewById(R.id.editText2);
         description = viewText.getText().toString();
 
+        //viewText = (EditText) findViewById(R.id.calendarView);
+        //date = viewText.getText().toString();
+
+        ParseUser user = ParseUser.getCurrentUser();
+        ParseObject bulletin = new ParseObject("BulletinBoard");
+        bulletin.put("DeleteDate", "Oct 31, 2015");
+        bulletin.put("Notification", description);
+        bulletin.put("Name", name);
+        bulletin.put("Apartment", user.get("Apartment"));
+
+        bulletin.saveInBackground();
+        finish();
         viewText = (EditText) findViewById(R.id.calendarView);
         date = viewText.getText().toString();
 
-        ParseUser user = ParseUser.getCurrentUser();
 
-        ParseObject bulletin = new ParseObject("GameScore");
         bulletin.put("DeleteDate", date);
         bulletin.put("Notification", description);
         bulletin.put("Name", name);
@@ -43,7 +56,7 @@ public class CreateBulletinActivity extends Activity {
     }
 
     public void CancelClick (View view) throws ParseException {
-
+        finish();
     }
 
 }

@@ -1,9 +1,11 @@
 package com.ben.bryan.wilburn.roomies;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.parse.*;
 
@@ -22,9 +24,7 @@ public class BulletinBoardActivity extends Activity {
 
         //super.onCreate(icicle);
         setContentView(R.layout.activity_bulletin_board);
-        adapter=new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1,
-                listItems);
+
 
 
 
@@ -43,6 +43,17 @@ public class BulletinBoardActivity extends Activity {
                 } else {
                     // Something went wrong.
                 }
+
+                String[] strArray = new String[listItems.size()];
+                for (int i =0; i < listItems.size(); i++) {
+                    strArray[i] = listItems.get(i);
+                }
+
+                adapter= new ArrayAdapter<String>(BulletinBoardActivity.this,
+                        android.R.layout.simple_list_item_1, strArray);
+
+                ListView myList = (ListView) findViewById(R.id.listView2);
+                myList.setAdapter(adapter);
             }
         });
 
@@ -56,4 +67,13 @@ public class BulletinBoardActivity extends Activity {
         adapter.notifyDataSetChanged();
     }
 
+    public void CreateBClick(View view) {
+        Intent intent = new Intent(this, CreateBulletinActivity.class);
+        String message = "Hello 2nd activity!";
+        intent.putExtra("message", message);
+        startActivity(intent);
+
+        //finish();
+        //startActivity(getIntent());
+    }
 }
