@@ -1,7 +1,12 @@
 package com.ben.bryan.wilburn.roomies;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.ArrayAdapter;
 
 import com.parse.FindCallback;
@@ -14,10 +19,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ChoreActivity extends Activity {
-
     private ArrayList<String> listItems=new ArrayList<String>();
     ArrayAdapter<String> adapter;
     int clickCounter=0;
+
+
+    private String name;
+    private String description;
+    private String date;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,9 +47,32 @@ public class ChoreActivity extends Activity {
                 } else {
                     // Something went wrong.
                 }
+
+
+                String[] strArray = new String[listItems.size()];
+                for (int i = 0; i < listItems.size(); i++) {
+                    strArray[i] = listItems.get(i);
+                }
+
+                adapter = new ArrayAdapter<String>(ChoreActivity.this,
+                        android.R.layout.simple_list_item_1, strArray);
+
+                ListView myList = (ListView) findViewById(R.id.listView);
+                myList.setAdapter(adapter);
             }
         });
+    }
 
+
+    public void CreateClick (View view) throws ParseException {
+        Intent intent = new Intent(this, CreateChoreActivity.class);
+        String message = "Hello 2nd activity!";
+        intent.putExtra("message", message);
+        startActivity(intent);
+
+
+        finish();
+        startActivity(getIntent());
     }
 
 }
