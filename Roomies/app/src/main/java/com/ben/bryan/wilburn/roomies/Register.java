@@ -131,7 +131,7 @@ public class Register extends Activity {
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(Register.this, LoginActivity.class);
+                Intent intent = new Intent(Register.this, Login.class);
                 startActivity(intent);
                 finish();
             }
@@ -168,12 +168,12 @@ public class Register extends Activity {
                         public void done(ParseException e) {
                             if (e == null) {
                                 // Show a Toast message upon successful
-                                // registration and send back to LoginActivity.
+                                // registration and send back to Login.
                                 Toast.makeText(getApplicationContext(),
                                         "Successfully Signed up, please log in.",
                                         Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(Register.this,
-                                        LoginActivity.class);
+                                        Login.class);
                                 startActivity(intent);
                                 finish();
                             } else {
