@@ -3,6 +3,7 @@ package com.ben.bryan.wilburn.roomies;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,152 +41,89 @@ public class Register extends Activity {
         edittxt_password = (EditText) findViewById(R.id.edittxt_password);
         edittxt_username = (EditText) findViewById(R.id.edittxt_username);
         edittxt_phonenumber = (EditText) findViewById(R.id.edittxt_phonenumber);
-            // edittxt_gid = (EditText) findViewById(R.id.edittxt_gid);
 
-        // Locate Buttons in register.xmlbutton_register = (Button) findViewById(R.id.button_register);
-        button_back = (Button) findViewById(R.id.button_back);
+    }
 
-        // Register Button Click Listener
-        button_register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                // Retrieve the text entered from the EditText
-                string_password = edittxt_password.getText().toString();
-                string_username = edittxt_username.getText().toString();
-                string_phonenumber = edittxt_phonenumber.getText().toString();
-                string_displayname = edittxt_displayname.getText().toString();
-                    // string_gid = edittxt_gid.getText().toString();
+    public void FinalRegisterClick(View view) {
+        // Retrieve the text entered from the EditText
+        string_password = edittxt_password.getText().toString();
+        string_username = edittxt_username.getText().toString();
+        string_phonenumber = edittxt_phonenumber.getText().toString();
+        string_displayname = edittxt_displayname.getText().toString();
 
-                // Force user to fill up the form
-                if (string_username.equals("") || string_password.equals("") ||
-                        string_displayname.equals("") || string_phonenumber.equals("")) {
-                    Toast.makeText(getApplication(), "Please complete the register form.",
-                            Toast.LENGTH_LONG).show();
-                } else {
-                    // Creates new user
-                    ParseUser user = new ParseUser();
-                    user.setUsername(string_username);
-                    user.setPassword(string_password);
-                    user.put("displayname", string_displayname);
-                    user.put("phone", string_phonenumber);
-                    String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
-                    user.put("phoneID", ID);
-
-
-
-
-
+        // Force user to fill up the form
+        if (string_username.equals("") || string_password.equals("") ||
+                string_displayname.equals("") || string_phonenumber.equals("")) {
+            Toast.makeText(getApplication(), "Please complete the register form.",
+                    Toast.LENGTH_LONG).show();
+        } else {
+            // Creates new user
+            ParseUser user = new ParseUser();
+            user.setUsername(string_username);
+            user.setPassword(string_password);
+            user.put("displayname", string_displayname);
+            user.put("phone", string_phonenumber);
+            String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
+            user.put("phoneID", ID);
                     /* Create new ParseObject Apartment
                     ParseObject apartment = new ParseObject("Apartment");
                     apartment.addUnique("email", Arrays.asList(string_username));
                     apartment.saveInBackground(); */
 
-                    user.signUpInBackground(new SignUpCallback() {
-                        @Override
-                        public void done(ParseException e) {
-                            if (e == null) {
+            user.signUpInBackground(new SignUpCallback() {
+                @Override
+                public void done(ParseException e) {
+                    if (e == null) {
+                        // Log in the user
+                        ParseUser.logInInBackground(string_username, string_password,
+                                new LogInCallback() {
+                                    @Override
+                                    public void done(ParseUser user, ParseException e) {
+                                        if (user != null) {
+                                            // Send user to MainMenu.class
+                                            Intent intent = new Intent(Register.this,
+                                                    MainMenu.class);
+                                            startActivity(intent);
+                                            Toast.makeText(getApplicationContext(),
+                                                    "Successfully Signed up and logged in.",
+                                                    Toast.LENGTH_LONG).show();
 
+                                            Intent intent2 = new Intent(Register.this, HouseHold.class);
+                                            String message = "Hello 2nd activity!";
+                                            intent2.putExtra("message", message);
+                                            startActivity(intent2);
 
+                                            finish();
+                                        }
+                                        else {
+                                            Toast.makeText(getApplicationContext(),
+                                                    "Login Failed.",
+                                                    Toast.LENGTH_LONG).show();
+                                        }
+                                    }
+                                });
 
-                                // Log in the user
-                                ParseUser.logInInBackground(string_username, string_password,
-                                        new LogInCallback() {
-                                            @Override
-                                            public void done(ParseUser user, ParseException e) {
-                                                if (user != null) {
-                                                    // Send user to MainMenu.class
-                                                    Intent intent = new Intent(Register.this,
-                                                            MainMenu.class);
-                                                    startActivity(intent);
-                                                    Toast.makeText(getApplicationContext(),
-                                                            "Successfully Signed up and logged in.",
-                                                            Toast.LENGTH_LONG).show();
-
-                                                    Intent intent2 = new Intent(Register.this, HouseHold.class);
-                                                    String message = "Hello 2nd activity!";
-                                                    intent2.putExtra("message", message);
-                                                    startActivity(intent2);
-
-                                                    finish();
-                                                } else {
-                                                    Toast.makeText(getApplicationContext(),
-                                                            "Login Failed.",
-                                                            Toast.LENGTH_LONG).show();
-                                                }
-                                            }
-                                        });
-
-                                finish();
-                            } else {
-                                Toast.makeText(getApplicationContext(),
-                                        "Sign up Error, Please Try Again.",
-                                        Toast.LENGTH_LONG).show();
-                            }
-                        }
-                    });
+                        finish();
+                    }
+                    else {
+                        Toast.makeText(getApplicationContext(),
+                                "Sign up Error, Please Try Again.",
+                                Toast.LENGTH_LONG).show();
+                    }
                 }
-            }
-        });
+            });
+        }
 
-        // Back Button Click Listener
-        button_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                Intent intent = new Intent(Register.this, Login.class);
-                startActivity(intent);
-                finish();
-            }
-        });
     }
 
-    private void createApartment() {
-        ParseObject apartment = new ParseObject("Apartment");
-        apartment.addUnique("email", Arrays.asList(string_username));
-        apartment.pinInBackground();
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if ((keyCode == KeyEvent.KEYCODE_BACK))
+        {
+            finish();
+            return true; // you missed this line
+        }
+        return super.onKeyDown(keyCode, event);
     }
-
-    /* Registration method
-    private void register() {
-        ParseUser.logInInBackground(string_username, string_password, new LogInCallback() {
-            public void done(ParseUser parseUser, ParseException e) {
-                if (parseUser != null) {
-                    // User exist
-                    Toast.makeText(getApplicationContext(),
-                            "User exist, please login",
-                            Toast.LENGTH_LONG).show();
-                } else {
-                    // Creates new user
-                    ParseUser user = new ParseUser();
-                    user.setUsername(string_username);
-                    user.setPassword(string_password);
-                    user.put("displayname", string_displayname);
-                    user.put("phone", string_phonenumber);
-                    String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
-                    user.put("phoneID", ID);
-
-                    user.signUpInBackground(new SignUpCallback() {
-                        @Override
-                        public void done(ParseException e) {
-                            if (e == null) {
-                                // Show a Toast message upon successful
-                                // registration and send back to Login.
-                                Toast.makeText(getApplicationContext(),
-                                        "Successfully Signed up, please log in.",
-                                        Toast.LENGTH_LONG).show();
-                                Intent intent = new Intent(Register.this,
-                                        Login.class);
-                                startActivity(intent);
-                                finish();
-                            } else {
-                                Toast.makeText(getApplicationContext(),
-                                        "Sign up Error, Please Try Again.",
-                                        Toast.LENGTH_LONG).show();
-                            }
-                        }
-                    });
-                }
-
-            }
-        });
-    } */
 }
