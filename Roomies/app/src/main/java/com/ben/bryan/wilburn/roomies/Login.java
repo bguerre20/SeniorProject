@@ -13,7 +13,7 @@ import com.parse.ParseUser;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 
-public class LoginActivity extends Activity {
+public class Login extends Activity {
     // Declare variables
     Button button_login;
     Button button_register;
@@ -56,7 +56,7 @@ public class LoginActivity extends Activity {
                                     if (user != null) {
                                         // If user exist and authenticated, send user to
                                         // MainMenu.class
-                                        Intent intent = new Intent(LoginActivity.this,
+                                        Intent intent = new Intent(Login.this,
                                                 MainMenu.class);
                                         startActivity(intent);
                                         Toast.makeText(getApplicationContext(),
@@ -79,7 +79,7 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View arg0) {
                 // Send user to Register.class
-                Intent intent = new Intent(LoginActivity.this, Register.class);
+                Intent intent = new Intent(Login.this, Register.class);
                 startActivity(intent);
                 finish();
             }
