@@ -83,13 +83,7 @@
         android:layout_height="wrap_content"
         android:text="@string/register"
         android:id="@+id/button_register"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/back"
-        android:id="@+id/button_back"
+        android:onClick="FinalRegisterClick"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

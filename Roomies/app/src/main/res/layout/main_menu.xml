@@ -1,51 +1,86 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="25dp"
+    android:layout_height="match_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:gravity="center_vertical"
+    android:background="@drawable/apartment_night">
 
-    <ImageView
-        android:layout_width="284dp"
-        android:layout_height="200dp"
-        android:id="@+id/imageView2"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/roommies_logo"
-        android:paddingBottom="25dp"
-        android:layout_weight="0.89" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center_horizontal"
+        android:text="EMS"
+        android:onClick="EmsButtonClick"
+        android:height="150dp"
+        android:background="@drawable/white_button_border" />
 
     <Button
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_height="wrap_content"
-        android:text="Emergency Message System"
-        android:layout_width="match_parent"
-        android:onClick="EmsButtonClick" />
-
-    <Button
-        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_horizontal"
+        android:layout_weight="1"
         android:text="Chores"
-        android:layout_width="match_parent"
-        android:onClick="ChoreClick" />
+        android:onClick="ChoreClick"
+        android:height="150dp"
+        android:background="@drawable/white_button_border" />
+    </LinearLayout>
 
-    <Button
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_weight="1"
         android:text="Bulletin Board"
-        android:layout_width="match_parent"
-        android:onClick="BulletinBoardClick"/>
+        android:onClick="BulletinBoardClick"
+        android:height="150dp"
+        android:background="@drawable/white_button_border"  />
 
     <Button
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Settings"
-        android:layout_width="match_parent"
-        android:onClick="SettingsClick"/>
+        android:layout_gravity="right|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_weight="1"
+        android:text="Finances"
+        android:onClick="LogoutClick"
+        android:height="150dp"
+        android:background="@drawable/white_button_border"  />
+
+    </LinearLayout>
 
     <Button
         android:layout_height="wrap_content"
         android:text="Logout"
         android:layout_width="match_parent"
-        android:onClick="LogoutClick"/>
+        android:layout_gravity="bottom"
+        android:onClick="LogoutClick"
+        android:background="@drawable/white_button_border" />
 
 
 </LinearLayout>
+
+</RelativeLayout>

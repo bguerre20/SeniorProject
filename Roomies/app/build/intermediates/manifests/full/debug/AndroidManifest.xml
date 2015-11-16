@@ -43,11 +43,11 @@
         <activity
             android:name="com.ben.bryan.wilburn.roomies.MainMenu"
             android:label="@string/title_activity_my"
-            android:parentActivityName="com.ben.bryan.wilburn.roomies.LoginActivity" >
+            android:parentActivityName="com.ben.bryan.wilburn.roomies.Login" >
         </activity>
         <activity
-            android:name="com.ben.bryan.wilburn.roomies.LoginActivity"
-            android:label="@string/title_activity_login" >
+            android:name="com.ben.bryan.wilburn.roomies.Login"
+            android:label="Roomies" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
