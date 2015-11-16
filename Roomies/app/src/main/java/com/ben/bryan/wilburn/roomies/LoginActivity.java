@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.parse.Parse;
 import com.parse.ParseUser;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
@@ -27,14 +26,12 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.login);
 
-        // Locate EditTexts in activity_login.xml
-        edittxt_username = (EditText) findViewById(R.id.edittxt_username);
+        // Locate EditTexts in login    edittxt_username = (EditText) findViewById(R.id.edittxt_username);
         edittxt_password = (EditText) findViewById(R.id.edittxt_password);
 
-        // Locate Buttons in activity_login.xml
-        button_login = (Button) findViewById(R.id.button_login);
+        // Locate Buttons in login.xmlbutton_login = (Button) findViewById(R.id.button_login);
         button_register = (Button) findViewById(R.id.button_register);
         button_exit = (Button) findViewById(R.id.button_exit);
 
@@ -58,9 +55,9 @@ public class LoginActivity extends Activity {
                                 public void done(ParseUser user, ParseException e) {
                                     if (user != null) {
                                         // If user exist and authenticated, send user to
-                                        // MyActivity.class
+                                        // MainMenu.class
                                         Intent intent = new Intent(LoginActivity.this,
-                                                MyActivity.class);
+                                                MainMenu.class);
                                         startActivity(intent);
                                         Toast.makeText(getApplicationContext(),
                                                 "Successfully Logged in.",
@@ -81,8 +78,8 @@ public class LoginActivity extends Activity {
         button_register.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                // Send user to RegisterActivity.class
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                // Send user to Register.class
+                Intent intent = new Intent(LoginActivity.this, Register.class);
                 startActivity(intent);
                 finish();
             }
