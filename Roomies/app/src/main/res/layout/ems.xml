@@ -1,23 +1,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/background"
     android:orientation="vertical"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:layout_gravity="top|center"
     android:id="@+id/EmsLinearLayout">
 
     <Button
         android:layout_height="wrap_content"
-        android:text="Add Message"
         android:layout_width="fill_parent"
-        android:onClick="AddMessageClick"/>
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:onClick="AddMessageClick"
+        android:background="@drawable/white_button_border"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:text="Add Message"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_orange_dark" />
 
     <Button
         android:layout_height="wrap_content"
-        android:text="Clear Messages"
         android:layout_width="fill_parent"
-        android:onClick="ClearMessages" />
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:onClick="ClearMessages"
+        android:background="@drawable/white_button_border"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:text="Clear Messages"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_orange_dark" /> />
 
 </LinearLayout>
