@@ -1,5 +1,6 @@
 package com.ben.bryan.wilburn.roomies;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
@@ -12,12 +13,14 @@ import java.util.List;
 
 public class HouseHold extends Activity {
     String editTextstr;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.house_hold);
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
     public void JoinClick (View view) throws ParseException {
         EditText viewText = (EditText) findViewById(R.id.editText3);
         editTextstr = viewText.getText().toString();
@@ -31,6 +34,7 @@ public class HouseHold extends Activity {
         else
             Toast.makeText(this, "House hold not found!", Toast.LENGTH_SHORT);
     }
+
     public void CreateClick (View view) throws ParseException{
         EditText viewText = (EditText) findViewById(R.id.editText3);
         editTextstr = viewText.getText().toString();
@@ -56,6 +60,7 @@ public class HouseHold extends Activity {
             Toast.makeText(this, "House hold create failed!", Toast.LENGTH_SHORT);
 
     }
+
     private boolean isInData (String name) throws ParseException {
         ParseQuery<ParseObject> apartmentQuery = ParseQuery.getQuery("Apartment");
         apartmentQuery.whereEqualTo("ApartmentID", name);
