@@ -4,67 +4,90 @@
     android:layout_height="fill_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    android:gravity="center_vertical"
-    android:layout_alignParentTop="true"
-    android:layout_alignParentStart="true">
+    android:gravity="center_vertical" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Household Group ID"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:typeface="serif"
-        android:id="@+id/textView4" />
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:layout_above="@+id/button7"
-        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
 
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:gravity="bottom">
 
-        <Button
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="5dp"
-            android:layout_gravity="left|center"
-            android:layout_weight="1"
-            android:text="Join"
-            android:onClick="JoinClick"
-            android:id="@+id/button6"
-            android:background="@drawable/white_button_border"
-            android:textStyle="bold"
-            android:textSize="15dp"
-            android:shadowColor="@android:color/background_dark"
-            android:textColor="@android:color/holo_orange_dark"
-            android:typeface="serif" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
-            android:layout_gravity="right|center"
-            android:layout_weight="1"
-            android:text="Create"
-            android:onClick="CreateClick"
-            android:id="@+id/button7"
-            android:background="@drawable/white_button_border"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Household Group ID"
+            android:textSize="25dp"
             android:textStyle="bold"
-            android:textSize="15dp"
+            android:typeface="serif"
+            android:layout_gravity="center"
             android:shadowColor="@android:color/background_dark"
             android:textColor="@android:color/holo_orange_dark"
-            android:typeface="serif" />
-    </LinearLayout>
+            android:id="@+id/textView4" />
 
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/editText3"
+            android:ems="10"
+            android:layout_above="@+id/button7"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_orange_light" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:text="Join"
+                android:onClick="JoinClick"
+                android:id="@+id/button6"
+                android:background="@drawable/white_button_border"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:shadowColor="@android:color/background_dark"
+                android:textColor="@android:color/holo_orange_dark"
+                android:typeface="serif" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="end|center"
+                android:layout_weight="1"
+                android:text="Create"
+                android:onClick="CreateClick"
+                android:id="@+id/button7"
+                android:background="@drawable/white_button_border"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:shadowColor="@android:color/background_dark"
+                android:textColor="@android:color/holo_orange_dark"
+                android:typeface="serif" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
