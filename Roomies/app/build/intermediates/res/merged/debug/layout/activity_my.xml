@@ -20,6 +20,7 @@
     <Button
         android:layout_height="wrap_content"
         android:text="Emergency Message System"
+        android:id="@+id/emsButton"
         android:layout_width="match_parent"
         android:onClick="EmsButtonClick" />
 
