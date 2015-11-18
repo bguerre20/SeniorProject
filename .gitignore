@@ -1,6 +1,5 @@
-\Roomies\.gradle
-\Roomies\.idea
-\Roomies\app\build
-\Roomies\build
-\Roomies\gradle
-\Roomies\local.properties
+/Roomies/.gradle/*
+/Roomies/app/build/*
+/Roomies/build/*
+/Roomies/gradle/*
+/Roomies/local.properties
