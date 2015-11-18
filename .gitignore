@@ -1,0 +1,7 @@
+/Roomies/.gradle/*
+/Roomies/app/*
+/Roomies/app/build/*
+/Roomies/build/*
+/Roomies/gradle/*
+/Roomies/local.properties
+*.json
