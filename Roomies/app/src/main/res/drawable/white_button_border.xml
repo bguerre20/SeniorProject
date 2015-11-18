@@ -2,6 +2,7 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <gradient android:startColor="#80000000"
+<<<<<<< HEAD
         android:endColor="#0F0F0F"
         android:angle="90"/>
     <corners
@@ -9,4 +10,10 @@
     <stroke
         android:width="2.5px"
         android:color="#FFFFFF" />
+=======
+        android:endColor="#FFFFFF"
+        android:angle="90"/>
+    <corners android:radius="3dp" />
+    <stroke android:width="2px" android:color="#FFFFFF" />
+>>>>>>> refs/remotes/bguerre20/master
 </shape>

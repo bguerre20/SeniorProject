@@ -10,14 +10,20 @@
 
     <TextView
         android:text="Email"
-        android:layout_width="wrap_content"
+        android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:textSize="25dp"
         android:textStyle="bold"
         android:typeface="serif"
         android:layout_gravity="center"
         android:shadowColor="@android:color/background_dark"
+<<<<<<< HEAD
         android:textColor="@android:color/holo_orange_dark" />
+=======
+        android:background="@drawable/white_button_border"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal" />
+>>>>>>> refs/remotes/bguerre20/master
 
     <EditText
         android:layout_width="fill_parent"
@@ -28,19 +34,21 @@
         android:ems="10"
         android:id="@+id/edittxt_username"
         android:textSize="25dp"
-        android:backgroundTint="@android:color/holo_orange_dark" />
+        android:backgroundTint="@android:color/black" />
 
     <TextView
         android:text="Password"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:textSize="25dp"
         android:textStyle="bold"
         android:typeface="serif"
+
+        android:background="@drawable/white_button_border"
         android:layout_gravity="center"
         android:shadowColor="@android:color/background_dark"
-        android:background="@android:color/transparent"
-        android:textColor="@android:color/holo_orange_dark" />
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -51,7 +59,7 @@
         android:ems="10"
         android:id="@+id/edittxt_password"
         android:textSize="25dp"
-        android:backgroundTint="@android:color/holo_orange_dark" />
+        android:backgroundTint="@android:color/black" />
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -59,6 +67,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="bottom">
+<<<<<<< HEAD
 
         <Button
             android:layout_width="wrap_content"
@@ -93,6 +102,40 @@
             android:onClick="RegisterClick"
             android:background="@drawable/white_button_border"
             android:typeface="serif" />
+=======
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="left|center"
+        android:layout_weight="1"
+        android:text="@string/login"
+        android:id="@+id/button_login"
+        android:background="@drawable/white_button_border"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="#ffffff"
+        android:onClick="LoginClick"
+        android:typeface="normal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/register"
+        android:layout_gravity="right|center"
+        android:id="@+id/button_register"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="#ffffff"
+        android:onClick="RegisterClick"
+        android:background="@drawable/white_button_border"/>
+>>>>>>> refs/remotes/bguerre20/master
     </LinearLayout>
 
 </LinearLayout>
