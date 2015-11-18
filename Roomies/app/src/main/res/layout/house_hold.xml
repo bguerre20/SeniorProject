@@ -12,7 +12,8 @@
         android:layout_height="300dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"
+        android:contentDescription="Roomies Logo" />
 
     <LinearLayout
         android:layout_marginBottom="10dp"
