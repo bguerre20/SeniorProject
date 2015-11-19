@@ -1,89 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/apartment_night"
     android:orientation="vertical"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:id="@+id/LoginLinearLayout">
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="172dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:contentDescription="Roomies Logo"
+        android:background = "@drawable/white_button_border"/>
 
     <TextView
         android:text="@string/username"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_gravity="center"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_orange_dark" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/edittxt_username"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="1" />
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_orange_light"  />
 
     <TextView
         android:text="@string/password"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_gravity="center"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_orange_dark"  />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/edittxt_password"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="1" />
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_orange_light"  />
 
     <TextView
         android:text="@string/displayname"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_gravity="center"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_orange_dark"  />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/edittxt_displayname"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="1" />
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_orange_light"  />
 
     <TextView
         android:text="@string/phonenumber"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_gravity="center"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_orange_dark"  />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:inputType="phone"
         android:ems="10"
         android:id="@+id/edittxt_phonenumber"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="1" />
-<!-- NOT WORKING AS INTENDED
-    <TextView
-        android:text="@string/gid"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_orange_light"  />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:ems="10"
-        android:id="@+id/edittxt_gid"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1" />
--->
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
         android:text="@string/register"
         android:id="@+id/button_register"
+        android:background="@drawable/white_button_border"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="@android:color/holo_orange_dark"
         android:onClick="FinalRegisterClick"
-        android:layout_gravity="center_horizontal" />
+        android:typeface="serif" />
 
 </LinearLayout>
