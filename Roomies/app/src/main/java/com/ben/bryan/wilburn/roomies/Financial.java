@@ -20,7 +20,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class Financial extends Activity {
+public class  Financial extends Activity {
 
     private double payment;
     private String description;
