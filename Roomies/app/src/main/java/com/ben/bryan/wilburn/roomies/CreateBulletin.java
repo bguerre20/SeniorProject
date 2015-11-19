@@ -13,46 +13,33 @@ public class CreateBulletin extends Activity {
     private String description;
     private String date;
 
+    private EditText edittext_name;
+    private EditText edittext_description;
+    private EditText edittext_date;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_bulletin);
         getActionBar().setDisplayHomeAsUpEnabled(true);
-
+        edittext_name = (EditText) findViewById(R.id.editText);
+        edittext_description = (EditText) findViewById(R.id.editText2);
+        edittext_date = (EditText) findViewById(R.id.calendarView);
     }
     public void CreateClick (View view) throws ParseException {
-        String name;
-        String description;
-        String date;
-
-
-        EditText viewText = (EditText) findViewById(R.id.editText);
-        name = viewText.getText().toString();
-
-        viewText = (EditText) findViewById(R.id.editText2);
-        description = viewText.getText().toString();
-
-        //viewText = (EditText) findViewById(R.id.calendarView);
-        //date = viewText.getText().toString();
+        name = edittext_name.getText().toString();
+        description = edittext_description.getText().toString();
+        date = edittext_date.getText().toString();
 
         ParseUser user = ParseUser.getCurrentUser();
         ParseObject bulletin = new ParseObject("BulletinBoard");
-        bulletin.put("DeleteDate", "Oct 31, 2015");
+
+        bulletin.put("NotificationDate", date);
         bulletin.put("Notification", description);
         bulletin.put("Name", name);
         bulletin.put("Apartment", user.get("Apartment"));
-
         bulletin.saveInBackground();
         finish();
-        viewText = (EditText) findViewById(R.id.calendarView);
-        date = viewText.getText().toString();
-
-
-        bulletin.put("DeleteDate", date);
-        bulletin.put("Notification", description);
-        bulletin.put("Name", name);
-        bulletin.put("Apartment", user.get("Apartment"));
-        bulletin.saveInBackground();
     }
 
     public void CancelClick (View view) throws ParseException {
