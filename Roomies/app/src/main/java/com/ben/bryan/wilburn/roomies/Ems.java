@@ -39,13 +39,7 @@ public class Ems extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        //get the message from intent
-        Intent intent = getIntent();
-
-        //Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
         setContentView(R.layout.ems);
-
         createButtons(readLocal());
     }
 

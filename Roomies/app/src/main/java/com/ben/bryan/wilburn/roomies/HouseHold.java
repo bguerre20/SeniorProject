@@ -62,8 +62,8 @@ public class HouseHold extends Activity {
     }
 
     private boolean isInData (String name) throws ParseException {
-        ParseQuery<ParseObject> apartmentQuery = ParseQuery.getQuery("Apartment");
-        apartmentQuery.whereEqualTo("ApartmentID", name);
+        ParseQuery<ParseObject> apartmentQuery = ParseQuery.getQuery("ApartmentID");
+        apartmentQuery.whereEqualTo("Apartment", name);
         List<ParseObject> check = apartmentQuery.find();
         return !check.isEmpty();
     }
