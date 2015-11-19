@@ -2,14 +2,22 @@ package com.ben.bryan.wilburn.roomies;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
 
+import com.parse.FindCallback;
+import com.parse.GetCallback;
+import com.parse.ParseException;
 import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
+
+import java.util.List;
 
 public class Financial extends Activity {
 
-    private String payment;
+    private double payment;
     private String description;
 
     @Override
@@ -35,8 +43,68 @@ public class Financial extends Activity {
         financial.put("User", user.get("displayname"));
         financial.put("Apartment", user.get("Apartment"));
 
-        chore.saveInBackground();
+        financial.saveInBackground();
         finish();
+
+        final ParseQuery<ParseObject> apartQuery = ParseQuery.getQuery("ApartmentID");
+        apartQuery.whereEqualTo("Apartment", user.get("Apartment"));
+        apartQuery.findInBackground(new FindCallback<ParseObject>() {
+            public void done(List<ParseObject> objects, ParseException e) {
+                if (e == null) {
+                    // The query was successful.
+                    objects.get(0).put("ApartmentBalance",(objects.get(0).getDouble("ApartmentBalance") + payment));
+                    objects.get(0).saveInBackground();
+                } else {
+                    // Something went wrong.
+                }
+            }});
+    }
+
+   // private void updateFinancial() {
+
+    //}
+
+    private void deleteFinancial(String objectID) {
+        ParseUser user = ParseUser.getCurrentUser();
+        ParseQuery<ParseObject> FinQuery = ParseQuery.getQuery("Financial");
+        FinQuery.getInBackground(objectID, new GetCallback<ParseObject>() {
+            public void done(ParseObject object, ParseException e) {
+                if (e == null) {
+                    // The query was successful.
+                    final double value = object.getDouble("payment");
+                    //fix apartment balance
+                    ParseUser user = ParseUser.getCurrentUser();
+                    final ParseQuery<ParseObject> apartQuery = ParseQuery.getQuery("ApartmentID");
+                    apartQuery.whereEqualTo("Apartment", user.get("Apartment"));
+                    apartQuery.findInBackground(new FindCallback<ParseObject>() {
+                        public void done(List<ParseObject> objects, ParseException e) {
+                            if (e == null) {
+                                // The query was successful.
+                                objects.get(0).put("ApartmentBalance",(objects.get(0).getDouble("ApartmentBalance") - value));
+                                objects.get(0).saveInBackground();
+                            } else {
+                                // Something went wrong.
+                            }
+                        }});
+                    object.deleteInBackground();
+                } else {
+                    // Something went wrong.
+                }
+            }});
+    }
+    private void deleteFromUserBalance(final String email, final double value) {
+        ParseQuery<ParseUser> userQuery = ParseUser.getQuery();
+        userQuery.whereEqualTo("email", email);
+        userQuery.findInBackground(new FindCallback<ParseUser>() {
+            public void done(List<ParseUser> objects, ParseException e) {
+                if (e == null) {
+                    // The query was successful.
+                    objects.get(0).put("UserBalance",(objects.get(0).getDouble("UserBalance") - value));
+                    objects.get(0).saveInBackground();
+                } else {
+                    // Something went wrong.
+                }
+            }});
     }
 
 
