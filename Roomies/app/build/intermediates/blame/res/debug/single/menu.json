@@ -4,23 +4,11 @@
         "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\src\\main\\res\\menu\\menu_my.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_my.xml",
-        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\src\\main\\res\\menu\\menu_my.xml"
-    },
-    {
         "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_ems.xml",
         "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\src\\main\\res\\menu\\menu_ems.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_ems.xml",
-        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\src\\main\\res\\menu\\menu_ems.xml"
-    },
-    {
         "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_manage_household.xml",
         "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\src\\main\\res\\menu\\menu_manage_household.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_manage_household.xml",
-        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\src\\main\\res\\menu\\menu_manage_household.xml"
     }
 ]

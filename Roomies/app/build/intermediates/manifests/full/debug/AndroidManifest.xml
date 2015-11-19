@@ -109,6 +109,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Register" />
         </activity>
+        <activity
+            android:name="com.ben.bryan.wilburn.roomies.Financial"
+            android:label="@string/title_activity_financial" >
+        </activity>
 
         <provider
             android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
