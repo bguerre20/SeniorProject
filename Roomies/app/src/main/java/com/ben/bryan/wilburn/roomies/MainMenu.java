@@ -12,21 +12,13 @@ import com.parse.ParseUser;
 
 public class MainMenu extends Activity {
 
-    public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
+    public final static String EXTRA_MESSAGE = "extra message";
     // Variables
     ParseUser user = ParseUser.getCurrentUser();
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
-
-        /* Create new ParseObject Apartment
-        ParseObject apartment = new ParseObject("Apartment");
-        apartment.put("userId", user.getObjectId());
-        apartment.saveInBackground(); */
-
-        // background listener for notifications
-        // ParseInstallation.getCurrentInstallation().saveInBackground();
     }
 
     @Override

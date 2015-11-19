@@ -2087,7 +2087,7 @@ containing a value of this type.
         public static final int editText=0x7f0d0072;
         public static final int editText2=0x7f0d0074;
         public static final int editText3=0x7f0d007d;
-        public static final int editText4=0x7f0d0078;
+        public static final int editText4=0x7f0d0079;
         public static final int edit_query=0x7f0d005f;
         public static final int edittxt_displayname=0x7f0d00a0;
         public static final int edittxt_password=0x7f0d0081;
@@ -2176,7 +2176,7 @@ containing a value of this type.
         public static final int textSpacerNoButtons=0x7f0d0050;
         public static final int textView=0x7f0d0071;
         public static final int textView2=0x7f0d0073;
-        public static final int textView3=0x7f0d0079;
+        public static final int textView3=0x7f0d0078;
         public static final int textView4=0x7f0d007c;
         public static final int text_wrapper=0x7f0d008c;
         public static final int time=0x7f0d0099;

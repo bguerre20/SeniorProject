@@ -46,14 +46,16 @@ public class Login extends Activity {
                             if (user != null) {
                                 // If user exist and authenticated, send user to
                                 // MainMenu.class
-                                Intent intent = new Intent(Login.this,
-                                        MainMenu.class);
+                                Intent intent = new Intent(Login.this, MainMenu.class);
+
+                                intent.putExtra("extra message", "message");
                                 startActivity(intent);
                                 Toast.makeText(getApplicationContext(),
                                         "Successfully Logged in.",
                                         Toast.LENGTH_LONG).show();
                                 finish();
-                            } else {
+                            }
+                            else {
                                 Toast.makeText(getApplicationContext(),
                                         "No such user exist, please Try Again or Register.",
                                         Toast.LENGTH_LONG).show();

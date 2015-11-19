@@ -626,7 +626,7 @@ int id dropdown 0x7f0d0023
 int id editText 0x7f0d0072
 int id editText2 0x7f0d0074
 int id editText3 0x7f0d007d
-int id editText4 0x7f0d0078
+int id editText4 0x7f0d0079
 int id edit_query 0x7f0d005f
 int id edittxt_displayname 0x7f0d00a0
 int id edittxt_password 0x7f0d0081
@@ -715,7 +715,7 @@ int id text2 0x7f0d009b
 int id textSpacerNoButtons 0x7f0d0050
 int id textView 0x7f0d0071
 int id textView2 0x7f0d0073
-int id textView3 0x7f0d0079
+int id textView3 0x7f0d0078
 int id textView4 0x7f0d007c
 int id text_wrapper 0x7f0d008c
 int id time 0x7f0d0099

@@ -20,24 +20,21 @@ import java.util.Arrays;
 
 public class Register extends Activity {
     // Declare variables
-    Button button_register;
-    Button button_back;
     String string_displayname;
     String string_password;
     String string_username;
     String string_phonenumber;
-    // String string_gid;
     EditText edittxt_displayname;
     EditText edittxt_password;
     EditText edittxt_username;
     EditText edittxt_phonenumber;
-    // EditText edittxt_gid;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
 
-        // Locate EditTexts in register.xmledittxt_displayname = (EditText) findViewById(R.id.edittxt_displayname);
+        // Locate EditTexts in register.xml
+        edittxt_displayname = (EditText) findViewById(R.id.edittxt_displayname);
         edittxt_password = (EditText) findViewById(R.id.edittxt_password);
         edittxt_username = (EditText) findViewById(R.id.edittxt_username);
         edittxt_phonenumber = (EditText) findViewById(R.id.edittxt_phonenumber);
@@ -52,11 +49,10 @@ public class Register extends Activity {
         string_displayname = edittxt_displayname.getText().toString();
 
         // Force user to fill up the form
-        if (string_username.equals("") || string_password.equals("") ||
-                string_displayname.equals("") || string_phonenumber.equals("")) {
-            Toast.makeText(getApplication(), "Please complete the register form.",
-                    Toast.LENGTH_LONG).show();
-        } else {
+        if (string_username.equals("") || string_password.equals("") || string_displayname.equals("") || string_phonenumber.equals("")) {
+            Toast.makeText(getApplication(), "Please complete the register form.",Toast.LENGTH_LONG).show();
+        }
+        else {
             // Creates new user
             ParseUser user = new ParseUser();
             user.setUsername(string_username);
