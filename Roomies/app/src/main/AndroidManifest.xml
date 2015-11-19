@@ -103,6 +103,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Register" />
         </activity>
+        <activity
+            android:name=".Financial"
+            android:label="@string/title_activity_financial" >
+        </activity>
     </application>
 
 </manifest>
