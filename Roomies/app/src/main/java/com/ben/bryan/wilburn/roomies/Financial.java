@@ -22,44 +22,56 @@ import java.util.ListIterator;
 
 public class  Financial extends Activity {
 
-    private double payment;
+    private double apartmentBalance;
     private String description;
-    private List<String> list;
+    private List<ParseUser> userList;
+    //list of payments for each user in same order as userList
+    private List<Double> paymentList;
+    private List<Double> userBalance;
+    private List<String> apartmentNames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_financial);
-        list = new ArrayList<String>();
+        apartmentNames = new ArrayList<String>();
+        userBalance = new ArrayList<Double>();
+        apartmentBalance = 0;
+        getUserList();
+        //sleep here of before you fill data
+        try {
+            Thread.sleep(500,0);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     private void addFinancial() {
-        //EditText viewText = (EditText) findViewById(R.id.editText);
-        //name = viewText.getText().toString();
+        //update paymentList for all members
+        int counter = 0;
+        for (ParseUser u : userList) {
+            if (paymentList.get(counter) > 0) {
+                ParseUser user = u;
+                ParseObject financial = new ParseObject("Financial");
+                financial.put("Value", paymentList.get(counter));
+                financial.put("Description", description);
+                financial.put("User", user.get("displayname"));
+                financial.put("Apartment", user.get("Apartment"));
+                financial.saveInBackground();
 
-       //viewText = (EditText) findViewById(R.id.editText2);
-        //description = viewText.getText().toString();
+                apartmentBalance += paymentList.get(counter);
+            }
+            counter++;
+        }
 
-        //viewText = (EditText) findViewById(R.id.editText4);
-        //date = viewText.getText().toString();
-
-        ParseUser user = ParseUser.getCurrentUser();
-        ParseObject financial = new ParseObject("Financial");
-        financial.put("Value", payment);
-        financial.put("Description", description);
-        financial.put("User", user.get("displayname"));
-        financial.put("Apartment", user.get("Apartment"));
-
-        financial.saveInBackground();
-        finish();
 
         final ParseQuery<ParseObject> apartQuery = ParseQuery.getQuery("ApartmentID");
-        apartQuery.whereEqualTo("Apartment", user.get("Apartment"));
+        apartQuery.whereEqualTo("Apartment", ParseUser.getCurrentUser().getString("Apartment"));
         apartQuery.findInBackground(new FindCallback<ParseObject>() {
             public void done(List<ParseObject> objects, ParseException e) {
                 if (e == null) {
                     // The query was successful.
-                    objects.get(0).put("ApartmentBalance",(objects.get(0).getDouble("ApartmentBalance") + payment));
+                    objects.get(0).put("ApartmentBalance",(objects.get(0).getDouble("ApartmentBalance") + apartmentBalance));
                     objects.get(0).saveInBackground();
                 } else {
                     // Something went wrong.
@@ -115,21 +127,25 @@ public class  Financial extends Activity {
         });
     }
 
-    private List<String> getUserList() {
-        list.clear();
+    private void getUserList() {
+        userList.clear();
         ParseQuery<ParseUser> userQuery = ParseUser.getQuery();
+        userQuery.whereEqualTo("Apartment", ParseUser.getCurrentUser().getString("Apartment"));
         userQuery.findInBackground(new FindCallback<ParseUser>() {
             public void done(List<ParseUser> objects, ParseException e) {
                 if (e == null) {
                     // The query was successful.
+                    userList = objects;
                     for (int i = 0; i < objects.size(); i++) {
-                        list.add(objects.get(i).get("username").toString());
+                        userBalance.add(i, userList.get(i).getDouble("payment"));
+                        apartmentBalance += userList.get(i).getDouble("payment");
+                        apartmentNames.add(i, userList.get(i).getString("user"));
                     }
                 } else {
                     // Something went wrong.
                 }
-            }});
-        return list;
+            }
+        });
     }
 
 
