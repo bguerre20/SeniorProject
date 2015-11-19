@@ -53,7 +53,7 @@ public class Login extends Activity {
                                 Toast.makeText(getApplicationContext(),
                                         "Successfully Logged in.",
                                         Toast.LENGTH_LONG).show();
-                                finish();
+
                             }
                             else {
                                 Toast.makeText(getApplicationContext(),

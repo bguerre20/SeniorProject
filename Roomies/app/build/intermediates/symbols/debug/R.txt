@@ -413,7 +413,7 @@ int dimen abc_text_size_subtitle_material_toolbar 0x7f080004
 int dimen abc_text_size_title_material 0x7f080041
 int dimen abc_text_size_title_material_toolbar 0x7f080005
 int dimen activity_horizontal_margin 0x7f080011
-int dimen activity_vertical_margin 0x7f080042
+int dimen activity_padding 0x7f080042
 int dimen dialog_fixed_height_major 0x7f080008
 int dimen dialog_fixed_height_minor 0x7f080009
 int dimen dialog_fixed_width_major 0x7f08000a
