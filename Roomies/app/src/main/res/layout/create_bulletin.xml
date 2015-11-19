@@ -51,6 +51,7 @@
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/editText2"
@@ -60,48 +61,53 @@
         android:typeface="serif"
         android:shadowColor="@android:color/background_dark"
         android:textColor="@android:color/holo_orange_dark"/>
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create"
-        android:onClick="CreateClick"
-        android:id="@+id/button4"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:background="@drawable/white_button_border"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:typeface="serif"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:layout_weight="1"
-        android:shadowColor="@android:color/background_dark"
-        android:textColor="@android:color/holo_orange_dark"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Create"
+            android:onClick="CreateClick"
+            android:id="@+id/button4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/white_button_border"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:shadowColor="@android:color/background_dark"
+            android:textColor="@android:color/holo_orange_dark"/>
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cancel"
-        android:onClick="CancelClick"
-        android:id="@+id/button5"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/white_button_border"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_weight="1"
-        android:typeface="serif"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:shadowColor="@android:color/background_dark"
-        android:textColor="@android:color/holo_orange_dark"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Cancel"
+            android:onClick="CancelClick"
+            android:id="@+id/button5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/white_button_border"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:typeface="serif"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:shadowColor="@android:color/background_dark"
+            android:textColor="@android:color/holo_orange_dark"/>
     </LinearLayout>
+
     <CalendarView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
