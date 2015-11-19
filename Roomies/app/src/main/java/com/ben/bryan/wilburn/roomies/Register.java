@@ -19,7 +19,7 @@ import com.parse.SignUpCallback;
 import java.util.Arrays;
 
 public class Register extends Activity {
-    // Declare variables\
+    // Declare variables
     String string_displayname;
     String string_password;
     String string_username;
@@ -38,6 +38,7 @@ public class Register extends Activity {
         edittxt_password = (EditText) findViewById(R.id.edittxt_password);
         edittxt_username = (EditText) findViewById(R.id.edittxt_username);
         edittxt_phonenumber = (EditText) findViewById(R.id.edittxt_phonenumber);
+
     }
 
     public void FinalRegisterClick(View view) {
@@ -48,11 +49,10 @@ public class Register extends Activity {
         string_displayname = edittxt_displayname.getText().toString();
 
         // Force user to fill up the form
-        if (string_username.equals("") || string_password.equals("") ||
-                string_displayname.equals("") || string_phonenumber.equals("")) {
-            Toast.makeText(getApplication(), "Please complete the register form.",
-                    Toast.LENGTH_LONG).show();
-        } else {
+        if (string_username.equals("") || string_password.equals("") || string_displayname.equals("") || string_phonenumber.equals("")) {
+            Toast.makeText(getApplication(), "Please complete the register form.",Toast.LENGTH_LONG).show();
+        }
+        else {
             // Creates new user
             ParseUser user = new ParseUser();
             user.setUsername(string_username);
@@ -61,6 +61,10 @@ public class Register extends Activity {
             user.put("phone", string_phonenumber);
             String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
             user.put("phoneID", ID);
+                    /* Create new ParseObject Apartment
+                    ParseObject apartment = new ParseObject("Apartment");
+                    apartment.addUnique("email", Arrays.asList(string_username));
+                    apartment.saveInBackground(); */
 
             user.signUpInBackground(new SignUpCallback() {
                 @Override
@@ -72,15 +76,17 @@ public class Register extends Activity {
                                     @Override
                                     public void done(ParseUser user, ParseException e) {
                                         if (user != null) {
-                                            // Send user to HouseHold.class
-                                            Intent intent = new Intent(Register.this,
-                                                    HouseHold.class);
-                                            startActivity(intent);
+
                                             Toast.makeText(getApplicationContext(),
-                                                    "Successfully Signed up.",
+                                                    "Successfully Signed up and logged in.",
                                                     Toast.LENGTH_LONG).show();
 
-                                            finish();
+                                            Intent intent2 = new Intent(Register.this, HouseHold.class);
+                                            String message = "Hello 2nd activity!";
+                                            intent2.putExtra("message", message);
+                                            startActivity(intent2);
+
+
                                         }
                                         else {
                                             Toast.makeText(getApplicationContext(),

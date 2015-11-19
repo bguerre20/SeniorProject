@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -40,7 +41,6 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:typeface="serif"
-            android:shadowColor="@android:color/background_dark"
             android:textColor="@android:color/holo_orange_dark" />
 
         <Button
@@ -56,7 +56,6 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:typeface="serif"
-            android:shadowColor="@android:color/background_dark"
             android:textColor="@android:color/holo_orange_dark" />
     </LinearLayout>
 
@@ -79,7 +78,6 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:typeface="serif"
-            android:shadowColor="@android:color/background_dark"
             android:textColor="@android:color/holo_orange_dark"  />
 
         <Button
@@ -95,7 +93,6 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:typeface="serif"
-            android:shadowColor="@android:color/background_dark"
             android:textColor="@android:color/holo_orange_dark" />
     </LinearLayout>
 
@@ -107,9 +104,8 @@
         android:onClick="LogoutClick"
         android:background="@drawable/white_button_border"
         android:textStyle="bold"
-        android:textSize="15sp"
+        android:textSize="25sp"
         android:typeface="serif"
-        android:shadowColor="@android:color/background_dark"
         android:textColor="@android:color/holo_orange_dark" />
 
 </LinearLayout>

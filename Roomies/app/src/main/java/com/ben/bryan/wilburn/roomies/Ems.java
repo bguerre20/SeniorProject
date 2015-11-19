@@ -28,6 +28,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -35,18 +36,15 @@ public class Ems extends Activity {
 
     private String m_Text = "";
     private int index = 0;
+    private List<String> nlist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        //get the message from intent
-        Intent intent = getIntent();
-
-        //Parse.initialize(this, "k1dHjdoF6RirSdBbn1vlVtG23MS16dIODIHDUzAx", "57JGIqDoufHntyBojqi1q0jWSfvYDr0JCE70aVHt");
         setContentView(R.layout.ems);
-
         createButtons(readLocal());
+        nlist = new ArrayList<String>();
+        getUserList();
     }
 
     @Override
@@ -161,38 +159,29 @@ public class Ems extends Activity {
     View.OnClickListener getOnClickDoSomething(final Button b) {
         return new View.OnClickListener() {
             public void onClick(View v) {
-                sendMessage(b.getText().toString());
+                chooseDeviceToken(b.getText().toString());
             }
         };
     }
 
-    private void sendMessage(final String message) {
+    private void sendMessage(final String message, String whoToSendTo) {
+
+        //String whoToSendTo = chooseDeviceToken();
 
         ParseQuery<ParseUser> query = ParseUser.getQuery();
-        //query.whereEqualTo("foo", "bar");
+        query.whereEqualTo("displayname", whoToSendTo);
 
         query.findInBackground(new FindCallback<ParseUser>() {
             public void done(List<ParseUser> list, ParseException e) {
                 if (e == null) {
-                    Log.d("id", "Retrieved " + list.size() + " scores");
-                    String[] user = new String[list.size()];
-                    String testWho = list.get(0).getString("phoneID");
+
                     ParseUser user1 = list.get(0);
-                    String test = user1.getString("phoneID");
+                    String test = user1.getString("phone");
 
-                    for (int i = 0; i < list.size(); i++) {
-                        user[i] = list.get(i).getString("phoneID");
-                        int a = 5;
-                    }
 
-                    String whoToSendTo = chooseDeviceToken(user);
-
-                    ParseQuery pushQuery = ParseInstallation.getQuery();
-                    //pushQuery.whereEqualTo("installationId", whoToSendTo);
-                    ParsePush push = new ParsePush();
-                    push.setQuery(pushQuery); // Set our Installation query
-                    push.setMessage(message);
-                    push.sendInBackground();
+                    SmsManager smsManager = SmsManager.getDefault();
+                    smsManager.sendTextMessage(test, null, message, null, null);
+                    Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
 
 
                 } else {
@@ -202,23 +191,22 @@ public class Ems extends Activity {
         });
 
 
-        SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage("7609363116",null, message, null, null);
-        Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
+
     }
-    public String chooseDeviceToken(String[] deviceTokenList) {
+    public String chooseDeviceToken(final String mssage) {
         index = 0;
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Choose Recipient")
-           .setItems(deviceTokenList, new DialogInterface.OnClickListener() {
+           .setItems(nlist.toArray(new String[nlist.size()]) , new DialogInterface.OnClickListener() {
                public void onClick(DialogInterface dialog, int which) {
-               // The 'which' argument contains the index position
-               // of the selected item
+                   // The 'which' argument contains the index position
+                   // of the selected item
                    index = which;
-           }
-    });
+                   sendMessage(mssage, nlist.get(index));
+               }
+           });
         builder.show();
-        return deviceTokenList[index];
+        return nlist.get(index);
     }
 
     public void ClearMessages(View view) {
@@ -233,5 +221,24 @@ public class Ems extends Activity {
         }
         finish();
         startActivity(getIntent());
+    }
+
+    private List<String> getUserList() {
+        nlist.clear();
+        ParseQuery<ParseUser> userQuery = ParseUser.getQuery();
+        userQuery.whereEqualTo("Apartment", ParseUser.getCurrentUser().getString("Apartment"));
+        userQuery.findInBackground(new FindCallback<ParseUser>() {
+            public void done(List<ParseUser> objects, ParseException e) {
+                if (e == null) {
+                    // The query was successful.
+                    for (int i = 0; i < objects.size(); i++) {
+                        nlist.add(objects.get(i).getString("displayname"));
+                    }
+                } else {
+                    // Something went wrong.
+                }
+            }
+        });
+        return nlist;
     }
 }
