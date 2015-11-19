@@ -38,18 +38,20 @@ public class BulletinBoard extends Activity {
                 if (e == null) {
                     // The query was successful.
                     for (int i = 0; i < objects.size(); i++) {
-                        listItems.add(objects.get(i).getString("Name"));
+                        listItems.add(objects.get(i).getString("Name") + " " +
+                                objects.get(i).getDate("NotificationDate").toString() + " " +
+                                objects.get(i).getString("Notification"));
                     }
                 } else {
                     // Something went wrong.
                 }
 
                 String[] strArray = new String[listItems.size()];
-                for (int i =0; i < listItems.size(); i++) {
+                for (int i = 0; i < listItems.size(); i++) {
                     strArray[i] = listItems.get(i);
                 }
 
-                adapter= new ArrayAdapter<String>(BulletinBoard.this,
+                adapter = new ArrayAdapter<String>(BulletinBoard.this,
                         android.R.layout.simple_list_item_1, strArray);
 
                 ListView myList = (ListView) findViewById(R.id.listView2);
@@ -72,8 +74,7 @@ public class BulletinBoard extends Activity {
         String message = "Hello 2nd activity!";
         intent.putExtra("message", message);
         startActivity(intent);
-
-        finish();
-        startActivity(getIntent());
     }
+
+
 }
