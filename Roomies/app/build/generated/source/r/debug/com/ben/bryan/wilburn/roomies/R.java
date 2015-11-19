@@ -2223,7 +2223,7 @@ containing a value of this type.
         public static final int abc_search_view=0x7f040016;
         public static final int abc_select_dialog_material=0x7f040017;
         public static final int abc_simple_dropdown_hint=0x7f040018;
-        public static final int activity_financial=0x7f040019;
+        public static final int financial =0x7f040019;
         public static final int bulletin_board=0x7f04001a;
         public static final int chore=0x7f04001b;
         public static final int create_bulletin=0x7f04001c;

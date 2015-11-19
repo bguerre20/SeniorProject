@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/cozy_apartment"
+    android:orientation="vertical"
+    android:layout_gravity="top|center"
+    android:id="@+id/FinancialLayout">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You"
+            android:gravity="center"
+            android:id="@+id/selfTextView"
+            android:editable="false"
+            android:textSize="25dp"
+            android:layout_below="@+id/youLabelTextView"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical|left"
+            android:background="@drawable/white_button_border"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:textSize="25dp"
+            android:layout_below="@+id/spinner1"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/white_button_border"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:id="@+id/balanceTextView"
+            android:textSize="25dp"
+            android:layout_below="@+id/editText"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:background="@drawable/white_button_border"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop ="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apartment Balance: "
+            android:id="@+id/aptBalanceTextView"
+            android:editable="false"
+            android:textSize="25dp"
+            android:layout_below="@+id/youLabelTextView"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/white_button_border"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop ="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input"
+            android:id="@+id/button8"
+            android:layout_marginRight="10dp"
+
+            android:typeface="serif"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/white_button_border"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:id="@+id/button9"
+            android:layout_gravity="center_horizontal"
+
+            android:typeface="serif"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/white_button_border"
+            android:textColor="@android:color/holo_orange_dark"/>
+        </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView3"
+        android:layout_gravity="center_horizontal"
+
+
+        android:typeface="serif"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/white_button_border"
+        android:textColor="@android:color/holo_orange_dark"
+        android:smoothScrollbar="false"
+        android:stackFromBottom="true" />
+
+
+</LinearLayout>

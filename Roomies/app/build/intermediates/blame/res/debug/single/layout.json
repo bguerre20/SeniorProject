@@ -48,16 +48,16 @@
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chore.xml",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\src\\main\\res\\layout\\chore.xml"
     },
     {
         "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
         "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_media_action.xml"
     },
     {
-        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chore.xml",
-        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\src\\main\\res\\layout\\chore.xml"
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
@@ -72,20 +72,20 @@
         "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_simple_dropdown_hint.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
         "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_financial.xml",
-        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\src\\main\\res\\layout\\activity_financial.xml"
+        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_financial.xml",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\src\\main\\res\\layout\\activity_financial.xml"
     },
     {
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\layout\\house_hold.xml",

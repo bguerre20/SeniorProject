@@ -2,10 +2,6 @@ package com.ben.bryan.wilburn.roomies;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.support.annotation.NonNull;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.ListView;
 
 import com.parse.FindCallback;
 import com.parse.GetCallback;
@@ -15,10 +11,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 public class  Financial extends Activity {
 
@@ -33,7 +26,7 @@ public class  Financial extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_financial);
+        setContentView(R.layout.financial);
         apartmentNames = new ArrayList<String>();
         userBalance = new ArrayList<Double>();
         apartmentBalance = 0;
