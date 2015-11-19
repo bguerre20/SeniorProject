@@ -2,6 +2,7 @@ package com.ben.bryan.wilburn.roomies;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.annotation.NonNull;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -13,17 +14,23 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Financial extends Activity {
 
     private double payment;
     private String description;
+    private List<String> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_financial);
+        list = new ArrayList<String>();
     }
 
     private void addFinancial() {
@@ -99,12 +106,30 @@ public class Financial extends Activity {
             public void done(List<ParseUser> objects, ParseException e) {
                 if (e == null) {
                     // The query was successful.
-                    objects.get(0).put("UserBalance",(objects.get(0).getDouble("UserBalance") - value));
+                    objects.get(0).put("UserBalance", (objects.get(0).getDouble("UserBalance") - value));
                     objects.get(0).saveInBackground();
                 } else {
                     // Something went wrong.
                 }
+            }
+        });
+    }
+
+    private List<String> getUserList() {
+        list.clear();
+        ParseQuery<ParseUser> userQuery = ParseUser.getQuery();
+        userQuery.findInBackground(new FindCallback<ParseUser>() {
+            public void done(List<ParseUser> objects, ParseException e) {
+                if (e == null) {
+                    // The query was successful.
+                    for (int i = 0; i < objects.size(); i++) {
+                        list.add(objects.get(i).get("username").toString());
+                    }
+                } else {
+                    // Something went wrong.
+                }
             }});
+        return list;
     }
 
 
