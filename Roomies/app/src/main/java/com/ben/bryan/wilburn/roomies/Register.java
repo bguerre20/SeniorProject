@@ -76,10 +76,7 @@ public class Register extends Activity {
                                     @Override
                                     public void done(ParseUser user, ParseException e) {
                                         if (user != null) {
-                                            // Send user to MainMenu.class
-                                            Intent intent = new Intent(Register.this,
-                                                    MainMenu.class);
-                                            startActivity(intent);
+
                                             Toast.makeText(getApplicationContext(),
                                                     "Successfully Signed up and logged in.",
                                                     Toast.LENGTH_LONG).show();
@@ -89,7 +86,7 @@ public class Register extends Activity {
                                             intent2.putExtra("message", message);
                                             startActivity(intent2);
 
-                                            finish();
+
                                         }
                                         else {
                                             Toast.makeText(getApplicationContext(),

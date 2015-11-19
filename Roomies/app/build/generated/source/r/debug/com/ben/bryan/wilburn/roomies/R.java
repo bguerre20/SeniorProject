@@ -1870,7 +1870,7 @@ containing a value of this type.
         public static final int abc_text_size_title_material=0x7f080041;
         public static final int abc_text_size_title_material_toolbar=0x7f080005;
         public static final int activity_horizontal_margin=0x7f080011;
-        public static final int activity_vertical_margin=0x7f080042;
+        public static final int activity_padding=0x7f080042;
         public static final int dialog_fixed_height_major=0x7f080008;
         public static final int dialog_fixed_height_minor=0x7f080009;
         public static final int dialog_fixed_width_major=0x7f08000a;
