@@ -3,6 +3,7 @@ package com.ben.bryan.wilburn.roomies;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -83,4 +84,14 @@ public class HouseHold extends Activity {
         return (listItems.contains(name));
     }
 
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if ((keyCode == KeyEvent.KEYCODE_BACK))
+        {
+            finish();
+            return true; // you missed this line
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 }

@@ -2,6 +2,7 @@ package com.ben.bryan.wilburn.roomies;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
@@ -68,30 +69,15 @@ public class MainMenu extends Activity {
     public void LogoutClick(View view) {
         finish();
     }
-}
-/*
-        ParseUser user = new ParseUser();
 
-        user.setUsername("Bryan");
-        user.setPassword("Guerre");
-        user.setEmail("bguerre12@gmail.com");
-        // other fields can be set just like with ParseObject
-        user.put("phone", "951-795-9262");
-        String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
-        user.put("phoneID", ID);
-        user.signUpInBackground(new SignUpCallback() {
-            @Override
-            public void done(com.parse.ParseException e) {
-                if (e == null) {
-                    // / Hooray! Let them use the app now.
-                    int a = 5;
-                }
-                else {
-                    // Sign up didn't succeed.
-                    // Look at the ParseException
-                    // to figure out what went wrong
-                    int b = 2;
-                }
-            }
-        });
-        */
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if ((keyCode == KeyEvent.KEYCODE_BACK))
+        {
+            finish();
+            return true; // you missed this line
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+}

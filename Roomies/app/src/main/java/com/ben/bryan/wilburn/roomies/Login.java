@@ -3,6 +3,7 @@ package com.ben.bryan.wilburn.roomies;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -69,5 +70,16 @@ public class Login extends Activity {
         // Send user to Register.class
         Intent intent = new Intent(Login.this, Register.class);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if ((keyCode == KeyEvent.KEYCODE_BACK))
+        {
+            finish();
+            return true; // you missed this line
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

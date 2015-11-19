@@ -3,6 +3,7 @@ package com.ben.bryan.wilburn.roomies;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -30,7 +31,7 @@ public class Chore extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chore);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         ParseUser user = ParseUser.getCurrentUser();
         final ParseQuery<ParseObject> boardQuery = ParseQuery.getQuery("Chore");
@@ -73,4 +74,14 @@ public class Chore extends Activity {
         startActivity(getIntent());
     }
 
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if ((keyCode == KeyEvent.KEYCODE_BACK))
+        {
+            finish();
+            return true; // you missed this line
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 }

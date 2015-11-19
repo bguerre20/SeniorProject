@@ -17,7 +17,7 @@
         android:layout_gravity="center"
         android:src="@drawable/logo"
         android:contentDescription="Roomies Logo"
-        android:background = "@drawable/button_press"/>
+        android:background = "@drawable/white_button_border"/>
 
     <LinearLayout
         android:layout_width="fill_parent"

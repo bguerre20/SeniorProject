@@ -3,6 +3,7 @@ package com.ben.bryan.wilburn.roomies;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -24,12 +25,6 @@ public class BulletinBoard extends Activity {
 
         //super.onCreate(icicle);
         setContentView(R.layout.bulletin_board);
-
-
-
-
-        setContentView(R.layout.bulletin_board);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
         ParseUser user = ParseUser.getCurrentUser();
         final ParseQuery<ParseObject> boardQuery = ParseQuery.getQuery("BulletinBoard");
         boardQuery.whereEqualTo("Apartment", user.get("Apartment"));
@@ -76,5 +71,14 @@ public class BulletinBoard extends Activity {
         startActivity(intent);
     }
 
-
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if ((keyCode == KeyEvent.KEYCODE_BACK))
+        {
+            finish();
+            return true; // you missed this line
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 }

@@ -2,6 +2,7 @@ package com.ben.bryan.wilburn.roomies;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.CalendarView;
 import android.widget.EditText;
@@ -25,7 +26,7 @@ public class CreateBulletin extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_bulletin);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         edittext_name = (EditText) findViewById(R.id.editText);
         edittext_description = (EditText) findViewById(R.id.editText2);
         editcalendar_date = (CalendarView) findViewById(R.id.calendarView);
@@ -54,4 +55,14 @@ public class CreateBulletin extends Activity {
         finish();
     }
 
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if ((keyCode == KeyEvent.KEYCODE_BACK))
+        {
+            finish();
+            return true; // you missed this line
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 }

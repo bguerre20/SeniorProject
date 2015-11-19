@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.text.InputType;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -197,7 +198,7 @@ public class Ems extends Activity {
         index = 0;
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Choose Recipient")
-           .setItems(nlist.toArray(new String[nlist.size()]) , new DialogInterface.OnClickListener() {
+           .setItems(nlist.toArray(new String[nlist.size()]), new DialogInterface.OnClickListener() {
                public void onClick(DialogInterface dialog, int which) {
                    // The 'which' argument contains the index position
                    // of the selected item
@@ -240,5 +241,16 @@ public class Ems extends Activity {
             }
         });
         return nlist;
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if ((keyCode == KeyEvent.KEYCODE_BACK))
+        {
+            finish();
+            return true; // you missed this line
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }
