@@ -73,7 +73,7 @@ public class BulletinBoard extends Activity {
         intent.putExtra("message", message);
         startActivity(intent);
 
-        //finish();
-        //startActivity(getIntent());
+        finish();
+        startActivity(getIntent());
     }
 }
