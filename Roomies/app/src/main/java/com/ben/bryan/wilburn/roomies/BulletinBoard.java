@@ -25,12 +25,6 @@ public class BulletinBoard extends Activity {
 
         //super.onCreate(icicle);
         setContentView(R.layout.bulletin_board);
-
-
-
-
-        setContentView(R.layout.bulletin_board);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
         ParseUser user = ParseUser.getCurrentUser();
         final ParseQuery<ParseObject> boardQuery = ParseQuery.getQuery("BulletinBoard");
         boardQuery.whereEqualTo("Apartment", user.get("Apartment"));

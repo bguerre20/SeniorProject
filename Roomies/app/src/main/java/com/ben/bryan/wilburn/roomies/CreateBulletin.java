@@ -26,7 +26,7 @@ public class CreateBulletin extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_bulletin);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         edittext_name = (EditText) findViewById(R.id.editText);
         edittext_description = (EditText) findViewById(R.id.editText2);
         editcalendar_date = (CalendarView) findViewById(R.id.calendarView);
