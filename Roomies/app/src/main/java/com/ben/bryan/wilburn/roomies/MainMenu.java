@@ -71,6 +71,7 @@ public class MainMenu extends Activity {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event)
     {
@@ -83,6 +84,8 @@ public class MainMenu extends Activity {
     }
 }
 =======
+=======
+>>>>>>> refs/remotes/origin/master
     public void FinanceClick(View view) {
         Intent intent = new Intent(this, Financial.class);
         String message = "Hello 2nd activity!";
@@ -90,4 +93,7 @@ public class MainMenu extends Activity {
         startActivity(intent);
     }
 }
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> refs/remotes/origin/master

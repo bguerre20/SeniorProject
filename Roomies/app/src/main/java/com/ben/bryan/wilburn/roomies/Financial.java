@@ -3,8 +3,14 @@ package com.ben.bryan.wilburn.roomies;
 import android.os.Bundle;
 import android.app.Activity;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.support.annotation.NonNull;
 import android.view.KeyEvent;
+=======
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+>>>>>>> refs/remotes/origin/master
 =======
 import android.view.View;
 import android.widget.AdapterView;
@@ -235,6 +241,7 @@ public class  Financial extends Activity implements OnItemSelectedListener {
                     }
                 });
             }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     @Override
@@ -267,6 +274,28 @@ public class  Financial extends Activity implements OnItemSelectedListener {
             private void getUserList() {
                 userList.clear();
 
+=======
+
+            private void deleteFromUserBalance(final String email, final double value) {
+                ParseQuery<ParseUser> userQuery = ParseUser.getQuery();
+                userQuery.whereEqualTo("email", email);
+                userQuery.findInBackground(new FindCallback<ParseUser>() {
+                    public void done(List<ParseUser> objects, ParseException e) {
+                        if (e == null) {
+                            // The query was successful.
+                            objects.get(0).put("UserBalance", (objects.get(0).getDouble("UserBalance") - value));
+                            objects.get(0).saveInBackground();
+                        } else {
+                            // Something went wrong.
+                        }
+                    }
+                });
+            }
+
+            private void getUserList() {
+                userList.clear();
+
+>>>>>>> refs/remotes/origin/master
                 ParseQuery<ParseUser> userQuery = ParseUser.getQuery();
                 userQuery.whereEqualTo("Apartment", ParseUser.getCurrentUser().getString("Apartment"));
                 userQuery.findInBackground(new FindCallback<ParseUser>() {
