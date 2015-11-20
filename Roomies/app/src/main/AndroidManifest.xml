@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ben.bryan.wilburn.roomies"
     android:versionCode="1"
-    android:versionName="1.1" >
+    android:versionName="1.1">
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -11,9 +11,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -33,15 +31,14 @@
         android:allowBackup="true"
         android:icon="@drawable/roommies_logo"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
         <activity
             android:name=".MainMenu"
             android:label="@string/title_activity_my"
-            android:parentActivityName=".Login" >
-        </activity>
+            android:parentActivityName=".Login"></activity>
         <activity
             android:name=".Login"
-            android:label="Roomies" >
+            android:label="Roomies">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,26 +47,22 @@
         </activity>
         <activity
             android:name=".Register"
-            android:label="@string/title_activity_register" >
-        </activity>
+            android:label="@string/title_activity_register"></activity>
         <activity
             android:name=".Ems"
-            android:label="@string/title_activity_ems" >
-        </activity>
+            android:label="@string/title_activity_ems"></activity>
         <activity
             android:name=".Chore"
-            android:label="@string/title_activity_chore" >
-        </activity>
+            android:label="@string/title_activity_chore"></activity>
         <activity
             android:name=".BulletinBoard"
-            android:label="@string/title_activity_bulletin_board" >
-        </activity>
+            android:label="@string/title_activity_bulletin_board"></activity>
 
         <service android:name="com.parse.PushService" />
 
         <receiver
             android:name="com.parse.ParsePushBroadcastReceiver"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.parse.push.intent.RECEIVE" />
                 <action android:name="com.parse.push.intent.DELETE" />
@@ -78,7 +71,7 @@
         </receiver>
         <receiver
             android:name="com.parse.GcmBroadcastReceiver"
-            android:permission="com.google.android.c2dm.permission.SEND" >
+            android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
@@ -90,7 +83,7 @@
         <activity
             android:name=".CreateBulletin"
             android:label="@string/title_activity_create_bulletin"
-            android:parentActivityName=".BulletinBoard" >
+            android:parentActivityName=".BulletinBoard">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".BulletinBoard" />
@@ -98,14 +91,21 @@
         <activity
             android:name=".HouseHold"
             android:label="@string/title_activity_house_hold"
-            android:parentActivityName=".Register" >
+            android:parentActivityName=".Register">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Register" />
         </activity>
         <activity
             android:name=".Financial"
-            android:label="@string/title_activity_financial" >
+            android:label="@string/title_activity_financial"></activity>
+        <activity
+            android:name=".AddFinancial"
+            android:label="@string/title_activity_add_financial"
+            android:parentActivityName=".Financial">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ben.bryan.wilburn.roomies.Financial" />
         </activity>
     </application>
 

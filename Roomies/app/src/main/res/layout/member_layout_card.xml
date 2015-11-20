@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:id="@+id/memberInputCard"
+        android:paddingTop ="10dp"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/white_button_border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME:"
+            android:gravity="center"
+            android:id="@+id/TextView"
+            android:editable="false"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_gravity="center_vertical|left"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:gravity="center"
+            android:id="@+id/editTextValue"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
