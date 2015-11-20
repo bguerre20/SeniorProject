@@ -31,7 +31,7 @@ public class Chore extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chore);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         ParseUser user = ParseUser.getCurrentUser();
         final ParseQuery<ParseObject> boardQuery = ParseQuery.getQuery("Chore");

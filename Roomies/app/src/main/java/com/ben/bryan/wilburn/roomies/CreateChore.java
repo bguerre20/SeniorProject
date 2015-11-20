@@ -15,13 +15,13 @@ public class CreateChore extends Activity {
     private String name;
     private String description;
     private String date;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_chore);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
+
     public void CreateCClick (View view) throws ParseException {
 
         EditText viewText = (EditText) findViewById(R.id.editText);
