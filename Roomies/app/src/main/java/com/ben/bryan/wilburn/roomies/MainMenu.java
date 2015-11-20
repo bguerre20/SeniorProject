@@ -68,30 +68,11 @@ public class MainMenu extends Activity {
     public void LogoutClick(View view) {
         finish();
     }
-}
-/*
-        ParseUser user = new ParseUser();
 
-        user.setUsername("Bryan");
-        user.setPassword("Guerre");
-        user.setEmail("bguerre12@gmail.com");
-        // other fields can be set just like with ParseObject
-        user.put("phone", "951-795-9262");
-        String ID = ParseInstallation.getCurrentInstallation().getInstallationId();
-        user.put("phoneID", ID);
-        user.signUpInBackground(new SignUpCallback() {
-            @Override
-            public void done(com.parse.ParseException e) {
-                if (e == null) {
-                    // / Hooray! Let them use the app now.
-                    int a = 5;
-                }
-                else {
-                    // Sign up didn't succeed.
-                    // Look at the ParseException
-                    // to figure out what went wrong
-                    int b = 2;
-                }
-            }
-        });
-        */
+    public void FinanceClick(View view) {
+        Intent intent = new Intent(this, Financial.class);
+        String message = "Hello 2nd activity!";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+}

@@ -15,7 +15,7 @@
             android:layout_gravity="center"
             android:src="@drawable/roommies_logo"
             android:contentDescription="Roomies Logo"
-            android:background = "@drawable/white_button_border"/>
+            android:background = "@drawable/button_press"/>
 
         <TextView
             android:text="Email"
@@ -83,7 +83,7 @@
                 android:layout_weight="1"
                 android:text="@string/login"
                 android:id="@+id/button_login"
-                android:background="@drawable/white_button_border"
+                android:background="@drawable/button_press"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:shadowColor="@android:color/background_dark"
@@ -105,7 +105,7 @@
                 android:shadowColor="@android:color/background_dark"
                 android:textColor="@android:color/holo_orange_dark"
                 android:onClick="RegisterClick"
-                android:background="@drawable/white_button_border"
+                android:background="@drawable/button_press"
                 android:typeface="serif" />
 
     </LinearLayout>
