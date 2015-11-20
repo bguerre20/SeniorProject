@@ -117,7 +117,7 @@
             android:text="Payment"
             android:id="@+id/button9"
             android:layout_gravity="center_horizontal"
-
+            android:onClick="PaymentClick"
             android:typeface="serif"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"

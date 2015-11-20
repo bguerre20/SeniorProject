@@ -2,6 +2,7 @@ package com.ben.bryan.wilburn.roomies;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
@@ -74,5 +75,16 @@ public class MainMenu extends Activity {
         String message = "Hello 2nd activity!";
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if ((keyCode == KeyEvent.KEYCODE_BACK))
+        {
+            finish();
+            return true; // you missed this line
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

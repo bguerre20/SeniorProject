@@ -1,11 +1,17 @@
 package com.ben.bryan.wilburn.roomies;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.text.InputType;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -49,6 +55,7 @@ public class  Financial extends Activity implements OnItemSelectedListener {
         apartmentNames = new ArrayList<String>();
         userList = new ArrayList<ParseUser>();
         financialData = new ArrayList<String>();
+        paymentList = new ArrayList<Double>();
         //get UI elements
 
         currentUser = ParseUser.getCurrentUser().getString("displayname");
@@ -84,6 +91,20 @@ public class  Financial extends Activity implements OnItemSelectedListener {
     }
 
     public void UpdateClick(View view)
+    {
+        updateUI();
+    }
+
+    public void InputClick(View view)
+    {
+        Intent intent = new Intent(this, AddFinancial.class);
+
+        intent.putExtra("passedUserList", apartmentNames.toArray(new String[apartmentNames.size()]));
+        startActivityForResult(intent, 1);
+        updateUI();
+    }
+
+    public void PaymentClick(View view)
     {
         updateUI();
     }
@@ -149,8 +170,8 @@ public class  Financial extends Activity implements OnItemSelectedListener {
             if (paymentList.get(counter) > 0) {
                 ParseUser user = u;
                 ParseObject financial = new ParseObject("Financial");
-                financial.put("Value", paymentList.get(counter));
-                financial.put("Description", description);
+                financial.put("payment", paymentList.get(counter));
+                financial.put("Discription", description); //HARDCODED
                 financial.put("User", user.get("displayname"));
                 financial.put("Apartment", user.get("Apartment"));
                 financial.saveInBackground();
@@ -167,12 +188,35 @@ public class  Financial extends Activity implements OnItemSelectedListener {
             public void done(List<ParseObject> objects, ParseException e) {
                 if (e == null) {
                     // The query was successful.
-                    objects.get(0).put("ApartmentBalance",(objects.get(0).getDouble("ApartmentBalance") + apartmentTotal));
+                    objects.get(0).put("ApartmentBalance", (objects.get(0).getDouble("ApartmentBalance") + apartmentTotal));
                     objects.get(0).saveInBackground();
                 } else {
                     // Something went wrong.
                 }
-            }});
+            }
+        });
+
+
+
+
+        ParseQuery<ParseUser> userQuery = ParseUser.getQuery();
+        userQuery.whereEqualTo("Apartment", ParseUser.getCurrentUser().getString("Apartment"));
+        userQuery.findInBackground(new FindCallback<ParseUser>() {
+            public void done(List<ParseUser> objects, ParseException e) {
+                if (e == null) {
+// The query was successful.
+                    for (int i = 0; i < objects.size(); i++) {
+                        objects.get(i).put("UserBalance", (objects.get(i).getDouble("UserBalance") + paymentList.get(i)));
+                        objects.get(i).saveInBackground();
+                    }
+                } else {
+// Something went wrong.
+                }
+            }
+        });
+
+
+        updateUI();
     }
 
     private void getAllFinancialData() {
@@ -272,5 +316,50 @@ public class  Financial extends Activity implements OnItemSelectedListener {
                 });
             }
 
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if ((keyCode == KeyEvent.KEYCODE_BACK))
+        {
+            finish();
+            return true; // you missed this line
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // Check which request we're responding to
+        if (requestCode == 1) {
+            // Make sure the request was successful
+            if (resultCode == RESULT_OK) {
+                // The user picked a contact.
+                // The Intent's data Uri identifies which contact was selected.
+                Bundle extras = data.getExtras();
+                if (extras != null) {
+                     paidByUsers = (double[])extras.get("returnedData");
+                    description = extras.getString("returnedDesc");
+                }
+                // Do something with the contact here (bigger example below)
+                    paymentList.clear();
+                if (paidByUsers.length > 0) {
+
+                    for (int i = 0; i < paidByUsers.length; i++)
+                        paymentList.add(paidByUsers[i]);
+
+
+                    addFinancial();
+                }
+
+
+            }
+        }
+
+
+
+
+
+    }
+    double[] paidByUsers;
 
 }
