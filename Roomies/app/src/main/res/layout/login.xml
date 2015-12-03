@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/cozy_apartment"
+    android:background="@drawable/background_one"
     android:orientation="vertical"
     android:gravity="center_vertical">
 
@@ -13,9 +13,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center"
-            android:src="@drawable/roommies_logo"
-            android:contentDescription="Roomies Logo"
-            android:background = "@drawable/button_press"/>
+            android:src="@drawable/roomlies_logo_new"
+            android:contentDescription="Roomies Logo"/>
 
         <TextView
             android:text="Email"
@@ -27,7 +26,7 @@
             android:textStyle="bold"
             android:typeface="serif"
             android:layout_gravity="center"
-            android:shadowColor="@android:color/background_dark"
+
             android:textColor="@android:color/holo_orange_dark" />
 
         <EditText
@@ -52,7 +51,7 @@
             android:textStyle="bold"
             android:typeface="serif"
             android:layout_gravity="center"
-            android:shadowColor="@android:color/background_dark"
+
             android:textColor="@android:color/holo_orange_dark" />
 
         <EditText
@@ -86,7 +85,7 @@
                 android:background="@drawable/button_press"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:shadowColor="@android:color/background_dark"
+
                 android:textColor="@android:color/holo_orange_dark"
                 android:onClick="LoginClick"
                 android:typeface="serif" />
@@ -102,7 +101,7 @@
                 android:id="@+id/button_register"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:shadowColor="@android:color/background_dark"
+
                 android:textColor="@android:color/holo_orange_dark"
                 android:onClick="RegisterClick"
                 android:background="@drawable/button_press"

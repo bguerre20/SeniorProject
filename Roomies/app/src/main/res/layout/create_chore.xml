@@ -3,7 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/apartment_night"
+    android:background="@drawable/background_two"
     android:padding="@dimen/activity_padding"
     android:orientation="vertical"
     android:gravity="center_vertical">
@@ -21,7 +21,6 @@
         android:typeface="serif"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:shadowColor="@android:color/background_dark"
         android:textColor="@android:color/holo_orange_dark"/>
 
     <EditText
@@ -43,7 +42,6 @@
         android:typeface="serif"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:shadowColor="@android:color/background_dark"
         android:textColor="@android:color/holo_orange_dark"/>
 
     <EditText
@@ -69,7 +67,6 @@
         android:typeface="serif"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:shadowColor="@android:color/background_dark"
         android:textColor="@android:color/holo_orange_dark"/>
 
     <EditText
@@ -104,7 +101,6 @@
             android:typeface="serif"
             android:paddingLeft="10dp"
             android:layout_weight="1"
-            android:shadowColor="@android:color/background_dark"
             android:textColor="@android:color/holo_orange_dark"/>
 
         <Button
@@ -124,7 +120,6 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:layout_weight="1"
-            android:shadowColor="@android:color/background_dark"
             android:textColor="@android:color/holo_orange_dark"/>
 
     </LinearLayout>
