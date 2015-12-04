@@ -824,8 +824,27 @@
                     "startLine": 45,
                     "startColumn": 4,
                     "startOffset": 6313,
+                    "endColumn": 60,
+                    "endOffset": 6369
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-in\\values-in.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 178,
+                        "endColumn": 60,
+                        "endOffset": 234
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 6374,
                     "endColumn": 114,
-                    "endOffset": 6423
+                    "endOffset": 6484
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-in\\values-in.xml",
@@ -840,11 +859,11 @@
             },
             {
                 "to": {
-                    "startLine": 46,
+                    "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 6428,
+                    "startOffset": 6489,
                     "endColumn": 112,
-                    "endOffset": 6536
+                    "endOffset": 6597
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-in\\values-in.xml",
@@ -859,11 +878,11 @@
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 6541,
+                    "startOffset": 6602,
                     "endColumn": 110,
-                    "endOffset": 6647
+                    "endOffset": 6708
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-in\\values-in.xml",
@@ -878,11 +897,11 @@
             },
             {
                 "to": {
-                    "startLine": 48,
+                    "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 6652,
+                    "startOffset": 6713,
                     "endColumn": 112,
-                    "endOffset": 6760
+                    "endOffset": 6821
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-in\\values-in.xml",
@@ -897,11 +916,11 @@
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 6765,
+                    "startOffset": 6826,
                     "endColumn": 85,
-                    "endOffset": 6846
+                    "endOffset": 6907
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-in\\values-in.xml",
@@ -916,11 +935,11 @@
             },
             {
                 "to": {
-                    "startLine": 50,
+                    "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 6851,
+                    "startOffset": 6912,
                     "endColumn": 95,
-                    "endOffset": 6942
+                    "endOffset": 7003
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-in\\values-in.xml",
@@ -935,11 +954,11 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 6947,
+                    "startOffset": 7008,
                     "endColumn": 107,
-                    "endOffset": 7050
+                    "endOffset": 7111
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\8.1.0\\res\\values-in\\wallet_strings.xml",

@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <permission
         android:name="com.parse.starter.permission.C2D_MESSAGE"
@@ -32,6 +33,16 @@
         android:icon="@drawable/roomlies_logo_new"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+
         <activity
             android:name=".MainMenu"
             android:label="@string/title_activity_my"

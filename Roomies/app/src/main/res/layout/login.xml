@@ -101,11 +101,20 @@
                 android:id="@+id/button_register"
                 android:textStyle="bold"
                 android:textSize="15sp"
-
-                android:textColor="@android:color/holo_orange_dark"
                 android:onClick="RegisterClick"
+                android:textColor="@android:color/holo_orange_dark"
                 android:background="@drawable/button_press"
                 android:typeface="serif" />
 
     </LinearLayout>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
 </LinearLayout>

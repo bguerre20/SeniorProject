@@ -136,7 +136,7 @@
         android:alwaysDrawnWithCache="true"
         android:dividerHeight="1dp"
         android:horizontalSpacing="3dp"
-        android:scrollingCache="true"
+        android:scrollingCache="false"
         android:typeface="serif"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
