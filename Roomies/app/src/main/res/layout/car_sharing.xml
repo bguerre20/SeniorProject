@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_two"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="bottom|center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:textSize="25sp"
+            android:layout_below="@+id/spinner2"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/white_button_border"
+            android:textColor="@android:color/holo_orange_dark"
+            android:spinnerMode="dialog"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="numberDecimal"
+            android:id="@+id/edit_text_miles"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@android:color/holo_orange_light" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="Log Miles"
+            android:id="@+id/button"
+            android:layout_below="@+id/button"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_press"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:textColor="@android:color/holo_orange_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:text="Claim"
+            android:id="@+id/button2"
+            android:onClick="CreateClick"
+            android:background="@drawable/button_press"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="Unclaim"
+            android:id="@+id/button4"
+            android:layout_below="@+id/button3"
+            android:background="@drawable/button_press"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:textColor="@android:color/holo_orange_dark"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewCarShare"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_press"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:textColor="@android:color/holo_orange_dark"/>
+</LinearLayout>

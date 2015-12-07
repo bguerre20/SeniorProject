@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
         android:name="com.parse.starter.permission.C2D_MESSAGE"
@@ -29,13 +30,22 @@
     <application
         android:name=".App"
         android:allowBackup="true"
-        android:icon="@drawable/roommies_logo"
+        android:icon="@drawable/roomlies_logo_new"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".MainMenu"
             android:label="@string/title_activity_my"
-            android:parentActivityName=".Login"></activity>
+            android:parentActivityName=".Login" />
         <activity
             android:name=".Login"
             android:label="Roomies">
@@ -47,16 +57,16 @@
         </activity>
         <activity
             android:name=".Register"
-            android:label="@string/title_activity_register"></activity>
+            android:label="@string/title_activity_register" />
         <activity
             android:name=".Ems"
-            android:label="@string/title_activity_ems"></activity>
+            android:label="@string/title_activity_ems" />
         <activity
             android:name=".Chore"
-            android:label="@string/title_activity_chore"></activity>
+            android:label="@string/title_activity_chore" />
         <activity
             android:name=".BulletinBoard"
-            android:label="@string/title_activity_bulletin_board"></activity>
+            android:label="@string/title_activity_bulletin_board" />
 
         <service android:name="com.parse.PushService" />
 
@@ -98,7 +108,7 @@
         </activity>
         <activity
             android:name=".Financial"
-            android:label="@string/title_activity_financial"></activity>
+            android:label="@string/title_activity_financial" />
         <activity
             android:name=".AddFinancial"
             android:label="@string/title_activity_add_financial"
@@ -106,6 +116,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ben.bryan.wilburn.roomies.Financial" />
+        </activity>
+        <activity
+            android:name=".CarSharing"
+            android:label="@string/title_activity_car_sharing"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ben.bryan.wilburn.roomies.MainMenu" />
         </activity>
     </application>
 
