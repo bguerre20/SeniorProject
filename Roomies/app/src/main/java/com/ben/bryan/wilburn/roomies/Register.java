@@ -9,6 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseInstallation;
@@ -29,9 +35,36 @@ public class Register extends Activity {
     EditText edittxt_username;
     EditText edittxt_phonenumber;
 
+
+    private LoginButton loginButton;
+    private CallbackManager callbackManager;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        callbackManager = CallbackManager.Factory.create();
         setContentView(R.layout.register);
+
+        loginButton = (LoginButton)findViewById(R.id.login_button);
+
+        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                Toast.makeText(getApplicationContext(),"Facebook Login Success!.",Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onCancel() {
+                Toast.makeText(getApplicationContext(),"Facebook Login Cancelled.",Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onError(FacebookException e) {
+                Toast.makeText(getApplicationContext(),"Facebook Login Failed.",Toast.LENGTH_LONG).show();
+            }
+        });
+
 
         // Locate EditTexts in register.xml
         edittxt_displayname = (EditText) findViewById(R.id.edittxt_displayname);
@@ -39,6 +72,12 @@ public class Register extends Activity {
         edittxt_username = (EditText) findViewById(R.id.edittxt_username);
         edittxt_phonenumber = (EditText) findViewById(R.id.edittxt_phonenumber);
 
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        callbackManager.onActivityResult(requestCode, resultCode, data);
     }
 
     public void FinalRegisterClick(View view) {
