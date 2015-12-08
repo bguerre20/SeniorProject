@@ -25,6 +25,7 @@
 
     <string name="logo">Logo</string>
     <string name="title_activity_create_bulletin">CreateBulletinActivity</string>
+    <string name="title_activity_create_chore">CreateChoreActivity</string>
     <string name="title_activity_house_hold">HouseHoldActivity</string>
     <string name="title_activity_financial">Financial</string>
     <string name="title_activity_add_financial">AddFinancial</string>

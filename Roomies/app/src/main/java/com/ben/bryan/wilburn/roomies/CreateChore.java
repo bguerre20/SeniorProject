@@ -14,7 +14,7 @@ public class CreateChore extends Activity {
 
     private String name;
     private String description;
-    private String date;
+    private int date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class CreateChore extends Activity {
         setContentView(R.layout.create_chore);
     }
 
-    public void CreateCClick (View view) throws ParseException {
+    public void CreateCClick (View view) {
 
         EditText viewText = (EditText) findViewById(R.id.editText);
         name = viewText.getText().toString();
@@ -31,17 +31,19 @@ public class CreateChore extends Activity {
         description = viewText.getText().toString();
 
         viewText = (EditText) findViewById(R.id.editText4);
-        date = viewText.getText().toString();
+        date = Integer.parseInt(viewText.getText().toString());
 
         ParseUser user = ParseUser.getCurrentUser();
+        String apt = user.getString("Apartment");
         ParseObject chore = new ParseObject("Chore");
+
         chore.put("Value", date);
         chore.put("Discription", description);
         chore.put("Name", name);
-        chore.put("Apartment", user.get("Apartment"));
-
+        chore.put("Apartment", apt);
         chore.saveInBackground();
-        finish();
+
+
     }
 
     public void CancelClick (View view) throws ParseException {

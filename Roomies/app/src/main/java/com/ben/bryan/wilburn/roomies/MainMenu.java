@@ -77,6 +77,13 @@ public class MainMenu extends Activity {
         startActivity(intent);
     }
 
+    public void CarSharingClick(View view) {
+        Intent intent = new Intent(this, CarSharing.class);
+        String message = "Hello 2nd activity!";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event)
     {

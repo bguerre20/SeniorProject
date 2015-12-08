@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.GetCallback;
@@ -93,6 +94,36 @@ public class  Financial extends Activity implements OnItemSelectedListener {
     public void UpdateClick(View view)
     {
         updateUI();
+
+        if (financialData.size() > 0) {
+            ArrayAdapter<String> adp2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, financialData.toArray(new String[financialData.size()]));
+            financialListView = (ListView) findViewById(R.id.financialListView);
+            // Apply the adapter to the spinner
+            financialListView.setAdapter(adp2);
+            adp2.setNotifyOnChange(false);
+
+            financialListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view,
+                                        int position, long id) {
+
+                    // ListView Clicked item index
+                    int itemPosition = position;
+
+                    // ListView Clicked item value
+                    String itemValue = (String) financialListView.getItemAtPosition(position);
+
+                    // Show Alert
+                    Toast.makeText(getApplicationContext(),
+                            "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
+                            .show();
+
+                }
+
+            });
+        }
+
     }
 
     public void InputClick(View view)
@@ -151,15 +182,6 @@ public class  Financial extends Activity implements OnItemSelectedListener {
 
                 individualBalanceLabel.setText(String.format("you owe $%.2f", balanceToDisplay));
             }
-
-            if (financialData.size() > 0) {
-                ArrayAdapter<String> adp2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, financialData.toArray(new String[financialData.size()]));
-                financialListView = (ListView) findViewById(R.id.financialListView);
-                // Apply the adapter to the spinner
-                financialListView.setAdapter(adp2);
-            }
-
-
         }
     }
 

@@ -133,13 +133,11 @@
         android:layout_height="fill_parent"
         android:id="@+id/financialListView"
         android:layout_gravity="center_horizontal"
-        android:alwaysDrawnWithCache="true"
+        android:alwaysDrawnWithCache="false"
         android:dividerHeight="1dp"
         android:horizontalSpacing="3dp"
-        android:scrollingCache="false"
+        android:scrollingCache="true"
         android:typeface="serif"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         android:layout_weight="1"
         android:gravity="center"
         android:background="@drawable/white_button_border"
@@ -147,7 +145,11 @@
         android:scrollbars="vertical"
         android:stackFromBottom="false"
         android:clipToPadding="false"
-        android:scrollbarStyle="outsideOverlay"/>
+        android:scrollbarStyle="outsideOverlay"
+        android:choiceMode="singleChoice"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"
+        android:smoothScrollbar="true" />
 
 
 </LinearLayout>
