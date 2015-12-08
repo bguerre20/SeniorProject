@@ -2219,6 +2219,7 @@ containing a value of this type.
         public static final int white_button_border_focus=0x7f0200b2;
     }
     public static final class id {
+        public static final int CarSharingLayout=0x7f0d0082;
         public static final int EmsLinearLayout=0x7f0d0097;
         public static final int FinancialLayout=0x7f0d0098;
         public static final int TextView=0x7f0d00aa;
@@ -2302,7 +2303,7 @@ containing a value of this type.
         public static final int editText4=0x7f0d0096;
         public static final int editTextValue=0x7f0d00ab;
         public static final int edit_query=0x7f0d0070;
-        public static final int edit_text_miles=0x7f0d0083;
+        public static final int edit_text_cost=0x7f0d0083;
         public static final int edittxt_displayname=0x7f0d00c9;
         public static final int edittxt_password=0x7f0d00a5;
         public static final int edittxt_phonenumber=0x7f0d00ca;
@@ -2389,7 +2390,6 @@ containing a value of this type.
         public static final int slide=0x7f0d0014;
         public static final int small=0x7f0d0050;
         public static final int spinner1=0x7f0d009b;
-        public static final int spinner2=0x7f0d0082;
         public static final int split_action_bar=0x7f0d0008;
         public static final int src_atop=0x7f0d0027;
         public static final int src_in=0x7f0d0028;
@@ -2620,15 +2620,16 @@ containing a value of this type.
         public static final int title_activity_car_sharing=0x7f07006e;
         public static final int title_activity_chore=0x7f07006f;
         public static final int title_activity_create_bulletin=0x7f070070;
-        public static final int title_activity_ems=0x7f070071;
-        public static final int title_activity_financial=0x7f070072;
-        public static final int title_activity_house_hold=0x7f070073;
-        public static final int title_activity_login=0x7f070074;
-        public static final int title_activity_manage_household=0x7f070075;
-        public static final int title_activity_my=0x7f070076;
-        public static final int title_activity_register=0x7f070077;
-        public static final int title_activity_settings=0x7f070078;
-        public static final int username=0x7f070079;
+        public static final int title_activity_create_chore=0x7f070071;
+        public static final int title_activity_ems=0x7f070072;
+        public static final int title_activity_financial=0x7f070073;
+        public static final int title_activity_house_hold=0x7f070074;
+        public static final int title_activity_login=0x7f070075;
+        public static final int title_activity_manage_household=0x7f070076;
+        public static final int title_activity_my=0x7f070077;
+        public static final int title_activity_register=0x7f070078;
+        public static final int title_activity_settings=0x7f070079;
+        public static final int username=0x7f07007a;
         public static final int wallet_buy_button_place_holder=0x7f070042;
     }
     public static final class style {

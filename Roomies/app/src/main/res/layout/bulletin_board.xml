@@ -3,7 +3,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/background_seven"
-    android:padding="10dp"
     android:orientation="vertical"
     android:gravity="top|center">
 
@@ -34,5 +33,9 @@
         android:typeface="serif"
         android:textColor="@android:color/holo_orange_dark"
         android:clipToPadding="false"
-        android:scrollbarStyle="outsideOverlay"/>
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true" />
 </LinearLayout>

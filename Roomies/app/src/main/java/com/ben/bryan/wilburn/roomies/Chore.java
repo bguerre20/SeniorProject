@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -21,8 +23,8 @@ public class Chore extends Activity {
     private ArrayList<String> listItems=new ArrayList<String>();
     ArrayAdapter<String> adapter;
     int clickCounter=0;
-
-
+    ListView myList;
+    String itemValue;
     private String name;
     private String description;
     private String date;
@@ -56,10 +58,33 @@ public class Chore extends Activity {
                 adapter = new ArrayAdapter<String>(Chore.this,
                         android.R.layout.simple_list_item_1, strArray);
 
-                ListView myList = (ListView) findViewById(R.id.listView);
+                myList = (ListView) findViewById(R.id.listView);
                 myList.setAdapter(adapter);
+                myList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view,
+                                            int position, long id) {
+
+                        // ListView Clicked item index
+                        int itemPosition = position;
+
+                        // ListView Clicked item value
+                        itemValue = (String) myList.getItemAtPosition(position);
+
+                        // Show Alert
+                        Toast.makeText(getApplicationContext(),
+                                "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
+                                .show();
+
+                    }
+
+                });
             }
         });
+
+
+
     }
 
 
@@ -68,10 +93,6 @@ public class Chore extends Activity {
         String message = "Hello 2nd activity!";
         intent.putExtra("message", message);
         startActivity(intent);
-
-
-        finish();
-        startActivity(getIntent());
     }
 
     @Override

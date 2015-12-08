@@ -105,6 +105,14 @@
                 android:value=".BulletinBoard" />
         </activity>
         <activity
+            android:name="com.ben.bryan.wilburn.roomies.CreateChore"
+            android:label="@string/title_activity_create_chore"
+            android:parentActivityName="com.ben.bryan.wilburn.roomies.Chore" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Chore" />
+        </activity>
+        <activity
             android:name="com.ben.bryan.wilburn.roomies.HouseHold"
             android:label="@string/title_activity_house_hold"
             android:parentActivityName="com.ben.bryan.wilburn.roomies.Register" >

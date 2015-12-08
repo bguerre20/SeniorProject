@@ -101,7 +101,7 @@ public class Login extends Activity {
                     Toast.LENGTH_LONG).show();
         }
         else {
-
+                executeLogin(string_username, string_password);
         }
     }
 

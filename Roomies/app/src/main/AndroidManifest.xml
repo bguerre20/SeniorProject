@@ -99,6 +99,14 @@
                 android:value=".BulletinBoard" />
         </activity>
         <activity
+            android:name=".CreateChore"
+            android:label="@string/title_activity_create_chore"
+            android:parentActivityName=".Chore">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Chore" />
+        </activity>
+        <activity
             android:name=".HouseHold"
             android:label="@string/title_activity_house_hold"
             android:parentActivityName=".Register">
