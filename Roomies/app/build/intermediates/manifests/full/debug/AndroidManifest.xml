@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
         android:name="com.parse.starter.permission.C2D_MESSAGE"
@@ -35,9 +36,18 @@
     <application
         android:name="com.ben.bryan.wilburn.roomies.App"
         android:allowBackup="true"
-        android:icon="@drawable/roommies_logo"
+        android:icon="@drawable/roomlies_logo_new"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name="com.ben.bryan.wilburn.roomies.MainMenu"
             android:label="@string/title_activity_my"
@@ -95,6 +105,14 @@
                 android:value=".BulletinBoard" />
         </activity>
         <activity
+            android:name="com.ben.bryan.wilburn.roomies.CreateChore"
+            android:label="@string/title_activity_create_chore"
+            android:parentActivityName="com.ben.bryan.wilburn.roomies.Chore" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Chore" />
+        </activity>
+        <activity
             android:name="com.ben.bryan.wilburn.roomies.HouseHold"
             android:label="@string/title_activity_house_hold"
             android:parentActivityName="com.ben.bryan.wilburn.roomies.Register" >
@@ -112,6 +130,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ben.bryan.wilburn.roomies.Financial" />
+        </activity>
+        <activity
+            android:name="com.ben.bryan.wilburn.roomies.CarSharing"
+            android:label="@string/title_activity_car_sharing"
+            android:parentActivityName="com.ben.bryan.wilburn.roomies.MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ben.bryan.wilburn.roomies.MainMenu" />
         </activity>
 
         <provider

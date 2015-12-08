@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bulletin_board_background"
+    android:background="@drawable/background_three"
     android:orientation="vertical"
     android:gravity="center" >
 
@@ -13,9 +13,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo"
-        android:contentDescription="Roomies Logo"
-        android:background = "@drawable/button_press"/>
+        android:src="@drawable/roomlies_logo_new"
+        android:contentDescription="Roomies Logo"/>
 
     <LinearLayout
         android:layout_marginBottom="10dp"
@@ -35,7 +34,6 @@
             android:textStyle="bold"
             android:typeface="serif"
             android:layout_gravity="center"
-            android:shadowColor="@android:color/background_dark"
             android:textColor="@android:color/holo_orange_dark"
             android:id="@+id/textView4" />
 
@@ -71,7 +69,6 @@
                 android:background="@drawable/button_press"
                 android:textStyle="bold"
                 android:textSize="15dp"
-                android:shadowColor="@android:color/background_dark"
                 android:textColor="@android:color/holo_orange_dark"
                 android:typeface="serif" />
 
@@ -88,7 +85,6 @@
                 android:background="@drawable/button_press"
                 android:textStyle="bold"
                 android:textSize="15dp"
-                android:shadowColor="@android:color/background_dark"
                 android:textColor="@android:color/holo_orange_dark"
                 android:typeface="serif" />
         </LinearLayout>

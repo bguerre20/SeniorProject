@@ -2,10 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/main_menu_background"
-    android:padding="10dp"
+    android:background="@drawable/background_seven"
     android:orientation="vertical"
-    android:gravity="bottom|center">
+    android:gravity="top|center">
 
     <Button
         android:layout_width="fill_parent"
@@ -20,7 +19,6 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:typeface="serif"
-        android:shadowColor="@android:color/background_dark"
         android:textColor="@android:color/holo_orange_dark"/>
 
     <ListView
@@ -33,6 +31,11 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:typeface="serif"
-        android:shadowColor="@android:color/background_dark"
-        android:textColor="@android:color/holo_orange_dark"/>
+        android:textColor="@android:color/holo_orange_dark"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true" />
 </LinearLayout>

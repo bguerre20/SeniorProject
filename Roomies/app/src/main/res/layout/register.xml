@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/apartment_night"
+    android:background="@drawable/background_two"
     android:orientation="vertical"
     android:gravity="bottom">
 
@@ -13,9 +13,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo"
-        android:contentDescription="Roomies Logo"
-        android:background = "@drawable/button_press"/>
+        android:src="@drawable/roomlies_logo_new"
+        android:contentDescription="Roomies Logo"/>
 
     <TextView
         android:text="@string/username"
@@ -137,5 +136,15 @@
         android:textColor="@android:color/holo_orange_dark"
         android:onClick="FinalRegisterClick"
         android:typeface="serif" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
 
 </LinearLayout>

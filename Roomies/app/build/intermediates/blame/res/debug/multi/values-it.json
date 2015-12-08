@@ -254,8 +254,316 @@
                     "startLine": 15,
                     "startColumn": 4,
                     "startOffset": 1491,
+                    "endLine": 16,
+                    "endColumn": 45,
+                    "endOffset": 1622
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endLine": 5,
+                        "endColumn": 45,
+                        "endOffset": 292
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1627,
+                    "endLine": 18,
+                    "endColumn": 43,
+                    "endOffset": 1764
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 297,
+                        "endLine": 7,
+                        "endColumn": 43,
+                        "endOffset": 434
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1769,
+                    "endColumn": 94,
+                    "endOffset": 1859
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 439,
+                        "endColumn": 94,
+                        "endOffset": 529
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1864,
+                    "endColumn": 67,
+                    "endOffset": 1927
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 534,
+                        "endColumn": 67,
+                        "endOffset": 597
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1932,
+                    "endColumn": 71,
+                    "endOffset": 1999
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 602,
+                        "endColumn": 71,
+                        "endOffset": 669
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2004,
+                    "endColumn": 63,
+                    "endOffset": 2063
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 674,
+                        "endColumn": 63,
+                        "endOffset": 733
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2068,
+                    "endColumn": 72,
+                    "endOffset": 2136
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 738,
+                        "endColumn": 72,
+                        "endOffset": 806
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2141,
+                    "endColumn": 71,
+                    "endOffset": 2208
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 811,
+                        "endColumn": 71,
+                        "endOffset": 878
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2213,
+                    "endColumn": 89,
+                    "endOffset": 2298
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 883,
+                        "endColumn": 89,
+                        "endOffset": 968
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2303,
+                    "endColumn": 70,
+                    "endOffset": 2369
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 973,
+                        "endColumn": 70,
+                        "endOffset": 1039
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2374,
+                    "endColumn": 70,
+                    "endOffset": 2440
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1044,
+                        "endColumn": 70,
+                        "endOffset": 1110
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2445,
+                    "endColumn": 93,
+                    "endOffset": 2534
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1115,
+                        "endColumn": 93,
+                        "endOffset": 1204
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2539,
+                    "endColumn": 107,
+                    "endOffset": 2642
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1209,
+                        "endColumn": 107,
+                        "endOffset": 1312
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2647,
+                    "endColumn": 63,
+                    "endOffset": 2706
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1317,
+                        "endColumn": 63,
+                        "endOffset": 1376
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2711,
+                    "endColumn": 68,
+                    "endOffset": 2775
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1381,
+                        "endColumn": 68,
+                        "endOffset": 1445
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2780,
+                    "endColumn": 154,
+                    "endOffset": 2930
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1450,
+                        "endColumn": 154,
+                        "endOffset": 1600
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2935,
                     "endColumn": 192,
-                    "endOffset": 1679
+                    "endOffset": 3123
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -270,11 +578,11 @@
             },
             {
                 "to": {
-                    "startLine": 16,
+                    "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 1684,
+                    "startOffset": 3128,
                     "endColumn": 175,
-                    "endOffset": 1855
+                    "endOffset": 3299
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -289,11 +597,11 @@
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 1860,
+                    "startOffset": 3304,
                     "endColumn": 112,
-                    "endOffset": 1968
+                    "endOffset": 3412
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -308,11 +616,11 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 1973,
+                    "startOffset": 3417,
                     "endColumn": 270,
-                    "endOffset": 2239
+                    "endOffset": 3683
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -327,11 +635,11 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 2244,
+                    "startOffset": 3688,
                     "endColumn": 127,
-                    "endOffset": 2367
+                    "endOffset": 3811
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -346,11 +654,11 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 2372,
+                    "startOffset": 3816,
                     "endColumn": 182,
-                    "endOffset": 2550
+                    "endOffset": 3994
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -365,11 +673,11 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 2555,
+                    "startOffset": 3999,
                     "endColumn": 125,
-                    "endOffset": 2676
+                    "endOffset": 4120
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -384,11 +692,11 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 2681,
+                    "startOffset": 4125,
                     "endColumn": 168,
-                    "endOffset": 2845
+                    "endOffset": 4289
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -403,11 +711,11 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 2850,
+                    "startOffset": 4294,
                     "endColumn": 130,
-                    "endOffset": 2976
+                    "endOffset": 4420
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -422,11 +730,11 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2981,
+                    "startOffset": 4425,
                     "endColumn": 212,
-                    "endOffset": 3189
+                    "endOffset": 4633
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -441,11 +749,11 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 3194,
+                    "startOffset": 4638,
                     "endColumn": 210,
-                    "endOffset": 3400
+                    "endOffset": 4844
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -460,11 +768,11 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 3405,
+                    "startOffset": 4849,
                     "endColumn": 127,
-                    "endOffset": 3528
+                    "endOffset": 4972
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -479,11 +787,11 @@
             },
             {
                 "to": {
-                    "startLine": 27,
+                    "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 3533,
+                    "startOffset": 4977,
                     "endColumn": 188,
-                    "endOffset": 3717
+                    "endOffset": 5161
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -498,11 +806,11 @@
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 3722,
+                    "startOffset": 5166,
                     "endColumn": 126,
-                    "endOffset": 3844
+                    "endOffset": 5288
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -517,11 +825,11 @@
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 3849,
+                    "startOffset": 5293,
                     "endColumn": 172,
-                    "endOffset": 4017
+                    "endOffset": 5461
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -536,11 +844,11 @@
             },
             {
                 "to": {
-                    "startLine": 30,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 4022,
+                    "startOffset": 5466,
                     "endColumn": 178,
-                    "endOffset": 4196
+                    "endOffset": 5640
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -555,11 +863,11 @@
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 4201,
+                    "startOffset": 5645,
                     "endColumn": 120,
-                    "endOffset": 4317
+                    "endOffset": 5761
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -574,11 +882,11 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 4322,
+                    "startOffset": 5766,
                     "endColumn": 185,
-                    "endOffset": 4503
+                    "endOffset": 5947
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -593,11 +901,11 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 4508,
+                    "startOffset": 5952,
                     "endColumn": 133,
-                    "endOffset": 4637
+                    "endOffset": 6081
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -612,11 +920,11 @@
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 4642,
+                    "startOffset": 6086,
                     "endColumn": 182,
-                    "endOffset": 4820
+                    "endOffset": 6264
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -631,11 +939,11 @@
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4825,
+                    "startOffset": 6269,
                     "endColumn": 127,
-                    "endOffset": 4948
+                    "endOffset": 6392
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -650,11 +958,11 @@
             },
             {
                 "to": {
-                    "startLine": 36,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 4953,
+                    "startOffset": 6397,
                     "endColumn": 146,
-                    "endOffset": 5095
+                    "endOffset": 6539
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -669,11 +977,11 @@
             },
             {
                 "to": {
-                    "startLine": 37,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 5100,
+                    "startOffset": 6544,
                     "endColumn": 259,
-                    "endOffset": 5355
+                    "endOffset": 6799
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -688,11 +996,11 @@
             },
             {
                 "to": {
-                    "startLine": 38,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 5360,
+                    "startOffset": 6804,
                     "endColumn": 124,
-                    "endOffset": 5480
+                    "endOffset": 6924
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -707,11 +1015,11 @@
             },
             {
                 "to": {
-                    "startLine": 39,
+                    "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 5485,
+                    "startOffset": 6929,
                     "endColumn": 108,
-                    "endOffset": 5589
+                    "endOffset": 7033
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -726,11 +1034,11 @@
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 5594,
+                    "startOffset": 7038,
                     "endColumn": 184,
-                    "endOffset": 5774
+                    "endOffset": 7218
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -745,11 +1053,11 @@
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 5779,
+                    "startOffset": 7223,
                     "endColumn": 128,
-                    "endOffset": 5903
+                    "endOffset": 7347
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -764,11 +1072,11 @@
             },
             {
                 "to": {
-                    "startLine": 42,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 5908,
+                    "startOffset": 7352,
                     "endColumn": 214,
-                    "endOffset": 6118
+                    "endOffset": 7562
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -783,11 +1091,11 @@
             },
             {
                 "to": {
-                    "startLine": 43,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 6123,
+                    "startOffset": 7567,
                     "endColumn": 137,
-                    "endOffset": 6256
+                    "endOffset": 7700
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -802,11 +1110,11 @@
             },
             {
                 "to": {
-                    "startLine": 44,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 6261,
+                    "startOffset": 7705,
                     "endColumn": 95,
-                    "endOffset": 6352
+                    "endOffset": 7796
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
@@ -821,11 +1129,30 @@
             },
             {
                 "to": {
-                    "startLine": 45,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 6357,
+                    "startOffset": 7801,
+                    "endColumn": 60,
+                    "endOffset": 7857
+                },
+                "from": {
+                    "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values-it\\values-it.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1728,
+                        "endColumn": 60,
+                        "endOffset": 1784
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 7862,
                     "endColumn": 112,
-                    "endOffset": 6465
+                    "endOffset": 7970
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
@@ -840,11 +1167,11 @@
             },
             {
                 "to": {
-                    "startLine": 46,
+                    "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 6470,
+                    "startOffset": 7975,
                     "endColumn": 114,
-                    "endOffset": 6580
+                    "endOffset": 8085
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
@@ -859,11 +1186,11 @@
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 6585,
+                    "startOffset": 8090,
                     "endColumn": 110,
-                    "endOffset": 6691
+                    "endOffset": 8196
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
@@ -878,11 +1205,11 @@
             },
             {
                 "to": {
-                    "startLine": 48,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 6696,
+                    "startOffset": 8201,
                     "endColumn": 105,
-                    "endOffset": 6797
+                    "endOffset": 8302
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
@@ -897,11 +1224,11 @@
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 6802,
+                    "startOffset": 8307,
                     "endColumn": 86,
-                    "endOffset": 6884
+                    "endOffset": 8389
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
@@ -916,11 +1243,11 @@
             },
             {
                 "to": {
-                    "startLine": 50,
+                    "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 6889,
+                    "startOffset": 8394,
                     "endColumn": 97,
-                    "endOffset": 6982
+                    "endOffset": 8487
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
@@ -935,969 +1262,14 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 6987,
+                    "startOffset": 8492,
                     "endColumn": 108,
-                    "endOffset": 7091
+                    "endOffset": 8596
                 },
                 "from": {
                     "file": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\8.1.0\\res\\values-it\\wallet_strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 230,
-                        "endColumn": 108,
-                        "endOffset": 334
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\values-it\\values-it.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 105,
-                    "endColumn": 108,
-                    "endOffset": 209
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 291,
-                        "endColumn": 108,
-                        "endOffset": 395
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 214,
-                    "endColumn": 99,
-                    "endOffset": 309
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 400,
-                        "endColumn": 99,
-                        "endOffset": 495
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 314,
-                    "endColumn": 108,
-                    "endOffset": 418
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 500,
-                        "endColumn": 108,
-                        "endOffset": 604
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 423,
-                    "endColumn": 83,
-                    "endOffset": 502
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 609,
-                        "endColumn": 83,
-                        "endOffset": 688
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 507,
-                    "endColumn": 108,
-                    "endOffset": 611
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 693,
-                        "endColumn": 108,
-                        "endOffset": 797
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 616,
-                    "endColumn": 124,
-                    "endOffset": 736
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 802,
-                        "endColumn": 124,
-                        "endOffset": 922
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 741,
-                    "endColumn": 105,
-                    "endOffset": 842
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 927,
-                        "endColumn": 105,
-                        "endOffset": 1028
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 847,
-                    "endColumn": 107,
-                    "endOffset": 950
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1033,
-                        "endColumn": 107,
-                        "endOffset": 1136
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 955,
-                    "endColumn": 97,
-                    "endOffset": 1048
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1141,
-                        "endColumn": 97,
-                        "endOffset": 1234
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 1053,
-                    "endColumn": 103,
-                    "endOffset": 1152
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1239,
-                        "endColumn": 103,
-                        "endOffset": 1338
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1157,
-                    "endColumn": 104,
-                    "endOffset": 1257
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1343,
-                        "endColumn": 104,
-                        "endOffset": 1443
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1262,
-                    "endColumn": 106,
-                    "endOffset": 1364
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1448,
-                        "endColumn": 106,
-                        "endOffset": 1550
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1369,
-                    "endColumn": 121,
-                    "endOffset": 1486
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1555,
-                        "endColumn": 121,
-                        "endOffset": 1672
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1491,
-                    "endColumn": 192,
-                    "endOffset": 1679
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 490,
-                        "endColumn": 196,
-                        "endOffset": 682
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1684,
-                    "endColumn": 175,
-                    "endOffset": 1855
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 2596,
-                        "endColumn": 179,
-                        "endOffset": 2771
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1860,
-                    "endColumn": 112,
-                    "endOffset": 1968
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 2294,
-                        "endColumn": 112,
-                        "endOffset": 2402
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1973,
-                    "endColumn": 270,
-                    "endOffset": 2239
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 4490,
-                        "endColumn": 274,
-                        "endOffset": 4760
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 2244,
-                    "endColumn": 127,
-                    "endOffset": 2367
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 2037,
-                        "endColumn": 127,
-                        "endOffset": 2160
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 2372,
-                    "endColumn": 182,
-                    "endOffset": 2550
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1850,
-                        "endColumn": 186,
-                        "endOffset": 2032
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 2555,
-                    "endColumn": 125,
-                    "endOffset": 2676
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1724,
-                        "endColumn": 125,
-                        "endOffset": 1845
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 2681,
-                    "endColumn": 168,
-                    "endOffset": 2845
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 860,
-                        "endColumn": 172,
-                        "endOffset": 1028
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 2850,
-                    "endColumn": 130,
-                    "endOffset": 2976
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1593,
-                        "endColumn": 130,
-                        "endOffset": 1719
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 2981,
-                    "endColumn": 212,
-                    "endOffset": 3189
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 1161,
-                        "endColumn": 216,
-                        "endOffset": 1373
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 3194,
-                    "endColumn": 210,
-                    "endOffset": 3400
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 1378,
-                        "endColumn": 214,
-                        "endOffset": 1588
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 3405,
-                    "endColumn": 127,
-                    "endOffset": 3528
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 1033,
-                        "endColumn": 127,
-                        "endOffset": 1156
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 27,
-                    "startColumn": 4,
-                    "startOffset": 3533,
-                    "endColumn": 188,
-                    "endOffset": 3717
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 3560,
-                        "endColumn": 188,
-                        "endOffset": 3744
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 28,
-                    "startColumn": 4,
-                    "startOffset": 3722,
-                    "endColumn": 126,
-                    "endOffset": 3844
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 3433,
-                        "endColumn": 126,
-                        "endOffset": 3555
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 29,
-                    "startColumn": 4,
-                    "startOffset": 3849,
-                    "endColumn": 172,
-                    "endOffset": 4017
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 687,
-                        "endColumn": 172,
-                        "endOffset": 855
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 4022,
-                    "endColumn": 178,
-                    "endOffset": 4196
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 3254,
-                        "endColumn": 178,
-                        "endOffset": 3428
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 4201,
-                    "endColumn": 120,
-                    "endOffset": 4317
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 3133,
-                        "endColumn": 120,
-                        "endOffset": 3249
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 32,
-                    "startColumn": 4,
-                    "startOffset": 4322,
-                    "endColumn": 185,
-                    "endOffset": 4503
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 304,
-                        "endColumn": 185,
-                        "endOffset": 485
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 33,
-                    "startColumn": 4,
-                    "startOffset": 4508,
-                    "endColumn": 133,
-                    "endOffset": 4637
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 133,
-                        "endOffset": 299
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 34,
-                    "startColumn": 4,
-                    "startOffset": 4642,
-                    "endColumn": 182,
-                    "endOffset": 4820
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 4893,
-                        "endColumn": 182,
-                        "endOffset": 5071
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 35,
-                    "startColumn": 4,
-                    "startOffset": 4825,
-                    "endColumn": 127,
-                    "endOffset": 4948
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 4765,
-                        "endColumn": 127,
-                        "endOffset": 4888
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 36,
-                    "startColumn": 4,
-                    "startOffset": 4953,
-                    "endColumn": 146,
-                    "endOffset": 5095
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 3749,
-                        "endColumn": 146,
-                        "endOffset": 3891
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 37,
-                    "startColumn": 4,
-                    "startOffset": 5100,
-                    "endColumn": 259,
-                    "endOffset": 5355
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 4021,
-                        "endColumn": 263,
-                        "endOffset": 4280
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 38,
-                    "startColumn": 4,
-                    "startOffset": 5360,
-                    "endColumn": 124,
-                    "endOffset": 5480
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 3896,
-                        "endColumn": 124,
-                        "endOffset": 4016
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 39,
-                    "startColumn": 4,
-                    "startOffset": 5485,
-                    "endColumn": 108,
-                    "endOffset": 5589
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 4285,
-                        "endColumn": 108,
-                        "endOffset": 4389
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 40,
-                    "startColumn": 4,
-                    "startOffset": 5594,
-                    "endColumn": 184,
-                    "endOffset": 5774
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 2407,
-                        "endColumn": 188,
-                        "endOffset": 2591
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 41,
-                    "startColumn": 4,
-                    "startOffset": 5779,
-                    "endColumn": 128,
-                    "endOffset": 5903
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 2165,
-                        "endColumn": 128,
-                        "endOffset": 2289
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 42,
-                    "startColumn": 4,
-                    "startOffset": 5908,
-                    "endColumn": 214,
-                    "endOffset": 6118
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 2914,
-                        "endColumn": 218,
-                        "endOffset": 3128
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 43,
-                    "startColumn": 4,
-                    "startOffset": 6123,
-                    "endColumn": 137,
-                    "endOffset": 6256
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 2776,
-                        "endColumn": 137,
-                        "endOffset": 2909
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 44,
-                    "startColumn": 4,
-                    "startOffset": 6261,
-                    "endColumn": 95,
-                    "endOffset": 6352
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-it\\common_strings.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 4394,
-                        "endColumn": 95,
-                        "endOffset": 4485
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 45,
-                    "startColumn": 4,
-                    "startOffset": 6357,
-                    "endColumn": 112,
-                    "endOffset": 6465
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 293,
-                        "endColumn": 112,
-                        "endOffset": 401
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 46,
-                    "startColumn": 4,
-                    "startOffset": 6470,
-                    "endColumn": 114,
-                    "endOffset": 6580
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 406,
-                        "endColumn": 114,
-                        "endOffset": 516
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 47,
-                    "startColumn": 4,
-                    "startOffset": 6585,
-                    "endColumn": 110,
-                    "endOffset": 6691
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 521,
-                        "endColumn": 110,
-                        "endOffset": 627
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 48,
-                    "startColumn": 4,
-                    "startOffset": 6696,
-                    "endColumn": 105,
-                    "endOffset": 6797
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 632,
-                        "endColumn": 105,
-                        "endOffset": 733
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 49,
-                    "startColumn": 4,
-                    "startOffset": 6802,
-                    "endColumn": 86,
-                    "endOffset": 6884
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 738,
-                        "endColumn": 86,
-                        "endOffset": 820
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 50,
-                    "startColumn": 4,
-                    "startOffset": 6889,
-                    "endColumn": 97,
-                    "endOffset": 6982
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-it\\values-it.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 825,
-                        "endColumn": 97,
-                        "endOffset": 918
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 51,
-                    "startColumn": 4,
-                    "startOffset": 6987,
-                    "endColumn": 108,
-                    "endOffset": 7091
-                },
-                "from": {
-                    "file": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\8.1.0\\res\\values-it\\wallet_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
