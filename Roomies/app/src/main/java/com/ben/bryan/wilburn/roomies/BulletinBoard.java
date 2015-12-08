@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.parse.*;
 
@@ -18,7 +20,8 @@ public class BulletinBoard extends Activity {
     private ArrayList<String> listItems=new ArrayList<String>();
     ArrayAdapter<String> adapter;
     int clickCounter=0;
-
+    ListView myList;
+    String itemValue;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,8 +52,28 @@ public class BulletinBoard extends Activity {
                 adapter = new ArrayAdapter<String>(BulletinBoard.this,
                         android.R.layout.simple_list_item_1, strArray);
 
-                ListView myList = (ListView) findViewById(R.id.listView2);
+                myList = (ListView) findViewById(R.id.listView2);
                 myList.setAdapter(adapter);
+
+                myList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view,
+                                            int position, long id) {
+
+                        // ListView Clicked item index
+                        int itemPosition = position;
+
+                        // ListView Clicked item value
+                        itemValue = (String) myList.getItemAtPosition(position);
+
+                        // Show Alert
+                        Toast.makeText(getApplicationContext(),
+                                "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
+                                .show();
+
+                    }
+                });
             }
         });
 

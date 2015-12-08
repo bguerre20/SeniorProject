@@ -81,10 +81,35 @@
             android:textColor="@android:color/holo_orange_dark" />
     </LinearLayout>
 
-    <Button
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_horizontal"
+
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:text="Car Sharing"
+        android:onClick="CarSharingClick"
+        android:height="130dp"
+        android:background="@drawable/button_press"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <Button
+        android:layout_height="match_parent"
         android:text="Logout"
         android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:height="130dp"
         android:layout_gravity="bottom"
         android:onClick="LogoutClick"
         android:background="@drawable/button_press"
@@ -93,4 +118,5 @@
         android:typeface="serif"
         android:textColor="@android:color/holo_orange_dark" />
 
+    </LinearLayout>
 </LinearLayout>
