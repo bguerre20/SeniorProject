@@ -1,5 +1,6 @@
 package com.ben.bryan.wilburn.roomies;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.KeyEvent;
@@ -11,12 +12,17 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class CarSharing extends Activity{
 
     private int selectedIndex = 0;
-
 
     EditText costEditText;
     ListView listViewCarShare;
@@ -27,10 +33,9 @@ public class CarSharing extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.car_sharing);
 
-        ArrayAdapter<String> adp2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, claimedData.toArray(new String[claimedData.size()]));
+
         costEditText = (EditText)findViewById(R.id.edit_text_cost);
         listViewCarShare = (ListView)findViewById(R.id.listViewCarShare);
-        listViewCarShare.setAdapter(adp2);
 
         getClaimData();
 
@@ -61,11 +66,13 @@ public class CarSharing extends Activity{
 
     public void LogButtonOnClick(View view) {
         double costOfFillup = Double.parseDouble(costEditText.getText().toString());
-
+        Fillup f = new Fillup();
+        //f.sendNewFillup(costOfFillup);
     }
 
     public void ClaimButtonOnClick(View view) {
-
+        Intent intent = new Intent(this, ClaimCar.class);
+        startActivity(intent);
     }
 
     public void UnclaimButtonOnClick(View view) {
@@ -73,7 +80,22 @@ public class CarSharing extends Activity{
     }
 
     public void getClaimData() {
-        //claimData.Add() -> data from database
+        ParseQuery<ParseObject> claimQ = ParseQuery.getQuery("Claim");
+        ParseUser user = ParseUser.getCurrentUser();
+        claimQ.whereEqualTo("Apartment", user.getString("Apartment"));
+        try {
+            List<ParseObject> parseList = claimQ.find();
+
+            for(ParseObject PO : parseList) {
+                claimedData.add(PO.getString("Name") + ": " + PO.getString("StartDate") + "," + PO.getString("EndDate"));
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        ArrayAdapter<String> adp2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, claimedData.toArray(new String[claimedData.size()]));
+
+        listViewCarShare.setAdapter(adp2);
     }
 
     @Override
