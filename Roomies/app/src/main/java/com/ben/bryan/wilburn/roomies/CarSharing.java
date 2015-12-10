@@ -67,7 +67,7 @@ public class CarSharing extends Activity{
     public void LogButtonOnClick(View view) {
         double costOfFillup = Double.parseDouble(costEditText.getText().toString());
         Fillup f = new Fillup();
-        //f.sendNewFillup(costOfFillup);
+        f.sendNewFillup(costOfFillup, ParseUser.getCurrentUser());
     }
 
     public void ClaimButtonOnClick(View view) {

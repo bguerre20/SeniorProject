@@ -81,6 +81,10 @@ public class ClaimCar extends Activity {
         newFragment.show(getFragmentManager(), "End Time");
     }
 
+
+    public void DoneCancelClick(View view) {
+        finish();
+    }
     public void FinalizeClaimClick (View view) {
         String start = "";
         String end = "";

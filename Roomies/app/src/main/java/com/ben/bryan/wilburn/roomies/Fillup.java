@@ -14,17 +14,17 @@ public class Fillup {
 
     public Fillup(){}
 
-    public boolean sendNewFillup(double newGallons, double newPricePerGallon, ParseUser user) {
-        ParseObject fillup = new ParseObject("Car");
+    public boolean sendNewFillup(double PricePayed, ParseUser user) {
+        ParseObject fillup = new ParseObject("Fillup");
         fillup.put("User", user.getString("displayname"));
-        fillup.put("Gallons", newGallons);
-        fillup.put("Price", newPricePerGallon);
+        fillup.put("Price", PricePayed);
         fillup.put("Apartment", user.get("Apartment"));
         //update  FInancial
         ParseObject financial =  new ParseObject("Financial");
-        financial.put("payment", newGallons * newPricePerGallon);
+        financial.put("payment", PricePayed);
         financial.put("Apartment", user.get("Apartment"));
         financial.put("User", user.getString("displayname"));
+        financial.put("Discription", "Tank Fillup");
 
 
         try {
@@ -33,9 +33,9 @@ public class Fillup {
             ParseQuery<ParseObject> apartmentQuery = ParseQuery.getQuery("ApartmentID");
             apartmentQuery.whereEqualTo("Apartment", user.getString("Apartment"));
             ParseObject apartmentID = apartmentQuery.find().get(0);
-            apartmentID.put("ApartmentBalance", apartmentID.getDouble("ApartementBalance") + (newGallons * newPricePerGallon));
+            apartmentID.put("ApartmentBalance", apartmentID.getDouble("ApartementBalance") + (PricePayed));
             //update user with query
-            user.put("UserBalance", user.getDouble("UserBalance") + (newGallons * newPricePerGallon));
+            user.put("UserBalance", user.getDouble("UserBalance") + (PricePayed));
             user.save();
             apartmentID.save();
             fillup.save();
@@ -58,7 +58,7 @@ public class Fillup {
             returnList = new String[fillupList.size()];
             int i = 0;
             for (ParseObject p: fillupList) {
-                returnList[i] = p.getString("Car") + " " + String.format("%.1f",p.getDouble("Miles"));
+                returnList[i] = p.getString("displayname") + " " + String.format("%.2f",p.getDouble("Price"));
                 i++;
             }
         } catch (ParseException e) {
