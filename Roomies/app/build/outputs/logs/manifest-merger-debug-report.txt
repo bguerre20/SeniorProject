@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:2:1-138:12
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:2:1-146:12
 	package
 		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:3:5-44
 		INJECTED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml
@@ -262,7 +262,7 @@ ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:28:22-89
 application
-ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:30:5-136:19
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:30:5-144:19
 MERGED from [com.google.android.gms:play-services-measurement:8.1.0] C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\AndroidManifest.xml:26:5-46:19
 MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
@@ -554,6 +554,14 @@ ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\Andr
 		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:131:13-51
 	android:name
 		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:129:13-39
+activity#com.ben.bryan.wilburn.roomies.ClaimCar
+ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:136:9-143:20
+	android:label
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:138:13-61
+	android:parentActivityName
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:139:13-53
+	android:name
+		ADDED from C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\src\main\AndroidManifest.xml:137:13-37
 provider#com.google.android.gms.measurement.AppMeasurementContentProvider
 ADDED from [com.google.android.gms:play-services-measurement:8.1.0] C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\AndroidManifest.xml:28:7-31:37
 MERGED from [com.google.android.gms:play-services-measurement:8.1.0] C:\Users\Bryan\Documents\CODE\SeniorProject\Roomies\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\AndroidManifest.xml:28:7-31:37

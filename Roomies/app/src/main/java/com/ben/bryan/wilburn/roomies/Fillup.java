@@ -24,6 +24,7 @@ public class Fillup {
         financial.put("payment", PricePayed);
         financial.put("Apartment", user.get("Apartment"));
         financial.put("User", user.getString("displayname"));
+        financial.put("Discription", "Tank Fillup");
 
 
         try {

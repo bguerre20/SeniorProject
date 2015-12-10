@@ -133,6 +133,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ben.bryan.wilburn.roomies.MainMenu" />
         </activity>
+        <activity
+            android:name=".ClaimCar"
+            android:label="@string/title_activity_claim_car"
+            android:parentActivityName=".CarSharing">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ben.bryan.wilburn.roomies.CarSharing" />
+        </activity>
     </application>
 
 </manifest>

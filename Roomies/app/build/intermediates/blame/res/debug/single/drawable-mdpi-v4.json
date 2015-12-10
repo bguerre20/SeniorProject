@@ -168,12 +168,12 @@
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable-mdpi\\com_facebook_button_like_icon_selected.png"
     },
     {
-        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_plusone_small_off_client.png",
-        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-mdpi\\ic_plusone_small_off_client.png"
-    },
-    {
         "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
         "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable-mdpi\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-mdpi\\ic_plusone_small_off_client.png"
     },
     {
         "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
@@ -276,12 +276,12 @@
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\drawable-mdpi\\ic_media_route_on_1_mono_dark.png"
     },
     {
-        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
-        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable-mdpi\\abc_ic_go_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\common_signin_btn_icon_disabled_focus_dark.9.png",
         "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.1.0\\res\\drawable-mdpi\\common_signin_btn_icon_disabled_focus_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable-mdpi\\abc_ic_go_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
@@ -352,16 +352,16 @@
         "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable-mdpi\\messenger_button_send_round_shadow.png"
     },
     {
-        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\messenger_bubble_large_blue.png",
-        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable-mdpi\\messenger_bubble_large_blue.png"
+        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_cast_on_2_light.png",
+        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\drawable-mdpi\\ic_cast_on_2_light.png"
     },
     {
         "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_media_route_on_1_mono_dark.png",
         "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\drawable-mdpi\\ic_media_route_on_1_mono_dark.png"
     },
     {
-        "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_cast_on_2_light.png",
-        "source": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\drawable-mdpi\\ic_cast_on_2_light.png"
+        "merged": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\messenger_bubble_large_blue.png",
+        "source": "C:\\Users\\Ben\\Desktop\\Final Project\\SeniorProject\\Roomies\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable-mdpi\\messenger_bubble_large_blue.png"
     },
     {
         "merged": "C:\\Users\\Bryan\\Documents\\CODE\\SeniorProject\\Roomies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\messenger_bubble_small_blue.png",
